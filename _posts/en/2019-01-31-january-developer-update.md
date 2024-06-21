@@ -2,15 +2,14 @@
 title: January Developer Update
 date: 2019-01-31 21:28:00 +0300
 categories: [Rocket Science, Development Blog]
-tags: [Rocket Science]     # TAG names should always be lowercase
+tags: [rocket science]     # TAG names should always be lowercase
 description: The adventure begins
+image: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/6c91d88a480d31c543b1ffe108d8278e09048fbb.png
+lang: en
 ---
 Hello everyone!
 
 Here is the first Developer Update. Today I want to talk about features and decisions of "How do you like it, Elon Musk?", that make this game different from the main competitors, and what I need to do to successfully reach the release in the Early Access. One small note, before I start. The following is a current vision of the game, and it may and probably will change in the future, as it has happened before several times. You are now aware of possible changes, so let's begin.
-
-![The first iteration of Mars](https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/6c91d88a480d31c543b1ffe108d8278e09048fbb.png)
-
 
 The game loop consists of three huge parts: managing the spaceport, constructing the rockets and launching them into the outer space. The main focus will be on the spaceport building and management, while other parts will extend and add meaning to it. Like in Kerbal Space Program the main focus is on the designing your rocket, and other game mechanics (science, upgrading buildings, even flights) only exist to support it. So I had a difficult task, how to "reinvent" rocket construction and flights to make them fresh, interesting to play and at the same time not much distracting from the main theme of the game. And, I think, I solved the flight part of the problem at this moment.
 
