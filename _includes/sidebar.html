@@ -56,16 +56,17 @@
       {% endunless %}
 
       {% capture page_url %}{{ page.url | split: '/' | shift: 2 | join: "/" }}{% endcapture %}
-      {% unless page_url contains 'categories/' %}
-        {% for locale in site.locales %}
+
+      {% for locale in site.locales %}      
+        {% unless page_url contains 'categories/' or site.data.skip_locale[locale] contains page_url %}
           <span>
             <a {% if locale == lang %} style="font-weight: bold;"{% endif %} href="{{site.baseurl}}/{{ locale }}/{{page_url}}">{{ locale }}</a>
           </span>
           {% if forloop.last == false %}
           <span class="icon-border" style="background-color: transparent;"></span>
           {% endif %}
-        {% endfor %}
-      {% endunless %}
+        {% endunless %}
+      {% endfor %}
     </div>
 
     <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100" style="justify-content: center;">
