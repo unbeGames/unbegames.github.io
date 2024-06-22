@@ -16,7 +16,7 @@
 
   {% if previous_page.url and previous_page.lang == lang %}
     <a
-      href="{{ site.baseurl }}{{ page.previous.url }}"
+      href="{{ site.baseurl }}{{ previous_page.url }}"
       class="btn btn-outline-primary"
       aria-label="{{ previous }}"
     >
@@ -30,7 +30,7 @@
 
   {% if next_page.url and next_page.lang == lang %}
     <a
-      href="{{ site.baseurl }}{{page.next.url}}"
+      href="{{ site.baseurl }}{{next_page.url}}"
       class="btn btn-outline-primary"
       aria-label="{{ next }}"
     >
