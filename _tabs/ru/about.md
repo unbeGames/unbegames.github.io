@@ -4,5 +4,5 @@ icon: fas fa-info-circle
 order: 4
 ---
 
-> Добавить маркдаун syntax content to file `_tabs/about.md`{: .filepath } and it will show up on this page.
+> В процессе написания
 {: .prompt-tip }
