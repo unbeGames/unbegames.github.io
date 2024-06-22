@@ -44,21 +44,7 @@
       </ul>
     </nav>
 
-    <div class="sidebar-bottom d-flex flex-wrap align-items-center w-75">
-        {% capture page_url %}{{ page.url | split: '/' | shift: 2 | join: "/" }}{% endcapture %}
-        {% unless page_url contains 'categories/' %}
-          {% for locale in site.locales %}
-            <span>
-              <a {% if locale == lang %} style="font-weight: bold;"{% endif %} href="{{site.baseurl}}/{{ locale }}/{{page_url}}">{{ locale }}</a>
-            </span>
-            {% if forloop.last == false %}
-            <span class="icon-border"></span>
-            {% endif %}
-          {% endfor %}
-        {% endunless %}
-    </div>
-
-    <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100">
+    <div class="sidebar-bottom d-flex flex-wrap align-items-center w-100" style="margin-bottom: 1rem; justify-content: center;">
       {% unless site.theme_mode %}
         <button type="button" class="btn btn-link nav-link" aria-label="Switch Mode" id="mode-toggle">
           <i class="fas fa-adjust"></i>
@@ -68,7 +54,21 @@
           <span class="icon-border"></span>
         {% endif %}
       {% endunless %}
-  
+
+      {% capture page_url %}{{ page.url | split: '/' | shift: 2 | join: "/" }}{% endcapture %}
+      {% unless page_url contains 'categories/' %}
+        {% for locale in site.locales %}
+          <span>
+            <a {% if locale == lang %} style="font-weight: bold;"{% endif %} href="{{site.baseurl}}/{{ locale }}/{{page_url}}">{{ locale }}</a>
+          </span>
+          {% if forloop.last == false %}
+          <span class="icon-border" style="background-color: transparent;"></span>
+          {% endif %}
+        {% endfor %}
+      {% endunless %}
+    </div>
+
+    <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100" style="justify-content: center;">
       {% for entry in site.data.contact %}
         {% case entry.type %}
           {% when 'github', 'twitter' %}

@@ -1,18 +1,30 @@
 #  The contact options.
 
-- type: github
-  icon: "fab fa-github"
+- type: steam
+  icon: "fa-brands fa-steam"
+  url: https://store.steampowered.com/developer/unbegames
+
+- type: youtube
+  icon: fa-brands fa-youtube
+  url: https://www.youtube.com/unbegames
+
+- type: discord
+  icon: fa-brands fa-discord
+  url: http://discord.gg/unbegames
 
 - type: twitter
   icon: "fa-brands fa-x-twitter"
 
-- type: email
-  icon: "fas fa-envelope"
-  noblank: true # open link in current tab
+
+#- type: email
+#  icon: "fas fa-envelope"
+#  noblank: true # open link in current tab
 
 - type: rss
   icon: "fas fa-rss"
   noblank: true
+
+
 # Uncomment and complete the url below to enable more contact options
 #
 # - type: mastodon
