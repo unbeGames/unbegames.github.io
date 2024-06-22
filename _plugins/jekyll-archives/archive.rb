@@ -22,7 +22,7 @@ module Jekyll
       #           e.g. { :year => 2014, :month => 08 } or "my-category" or "my-tag".
       # type  - The type of archive. Can be one of "year", "month", "day", "category", or "tag"
       # posts - The array of posts that belong in this archive.
-      def initialize(site, title, type, posts, lang = "en")    
+      def initialize(site, title, type, posts, lang = "en")  
         @site   = site
         @posts  = posts
         @type   = type
