@@ -122,9 +122,9 @@ comments:
   # Giscus options › https://giscus.app
   giscus:
     repo: unbeGames/unbegames.github.io
-    repo_id: ENV_GISCUS_REPO_ID
+    repo_id: R_kgDOMMSs1A
     category: Comments
-    category_id: ENV_GISCUS_CATEGORY_ID
+    category_id: DIC_kwDOMMSs1M4CgSch
     mapping: pathname # optional, default to 'pathname'
     strict: 0 # optional, default to '0'
     input_position: top # optional, default to 'bottom'
