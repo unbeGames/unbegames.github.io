@@ -8,7 +8,6 @@ description: Flight Planning
 image: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/99a46c1214939a7a65368e431ecb68363d446b6b.png
 game: Rocket Science
 ---
-
 Hi there!
 
 Another month have passed and it’s time to give you an idea about current work progress and state of the game in general. So, let’s get started. Note, that all screenshots listed in this post are presenting work in progress.
