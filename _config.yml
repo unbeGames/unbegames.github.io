@@ -20,7 +20,7 @@ timezone: Europe/Moscow
 
 title: unbegames # the main title
 
-tagline: An independent game development studio.  # it will display as the sub-title
+tagline: An independent game development studio  # it will display as the sub-title
 
 description: >- # used by seo meta and the atom feed
   Developer and publisher of indie games including Rocket Science, HEX Defense and Spreadstrom
@@ -100,7 +100,7 @@ theme_mode: # [light | dark]
 cdn:
 
 # the avatar on sidebar, support local or CORS resources
-avatar: https://pbs.twimg.com/profile_images/974261427807637506/Gnr1fdo3_400x400.jpg
+avatar: https://avatars.githubusercontent.com/u/20670310
 
 # The URL of the site-wide social preview image used in SEO `og:image` meta tag.
 # It can be overridden by a customized `page.image` in front matter.
