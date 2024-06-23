@@ -238,6 +238,7 @@ defaults:
     values:
       layout: post
       lang: en
+      locale: en
       comments: true # Enable comments in posts.
       toc: true # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
@@ -249,6 +250,7 @@ defaults:
     values:
       layout: post
       lang: ru
+      locale: ru
       comments: true # Enable comments in posts.
       toc: true # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
