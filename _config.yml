@@ -242,7 +242,7 @@ defaults:
       toc: true # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
-      permalink: /en/posts/:year/:title/
+      permalink: /en/posts/:title/
   - scope:
       path: "_posts/ru" # An empty string here means all files in the project
       type: posts
@@ -253,7 +253,7 @@ defaults:
       toc: true # Display TOC column in posts.
       # DO NOT modify the following parameter unless you are confident enough
       # to update the code of all other post links in this project.
-      permalink: /ru/posts/:year/:title/
+      permalink: /ru/posts/:title/
   - scope:
       path: _drafts
     values:
