@@ -1,4 +1,5 @@
 ---
+author: Arugin
 title: February Developer Update
 date: 2019-02-28 17:09:00 +0300
 categories: [Rocket Science, Development Blog]
@@ -10,6 +11,9 @@ image: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/340942
 Hello everyone and welcome to another developer update of “How do you like it, Elon Musk?”.  
 
 I've spent most of the last month trying to answer the question: “Can I generate planet in the game as big as Earth actually is?”. Moreover I wanted this planet to not only be big, but also look like Earth, because the lore of the game need this and because not many games try to do this. Usually there are completely procedurally generated planets in these games, but with the similar color scheme and physics parameters to the real ones from our Solar System. But this was not what I wanted from my game.
+
+![Planet surface geometry generation](https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/0243674f6c7ad289ebd6693251e8c62bac3a0932.png)
+_Tech demo of geometry generation. 100 000 meters above the ground_
 
 There were several problems that I had to solve to achieve this goal. First of all the size. You can not use single precision numbers in the calculations, because, for example, with the planet radius five times smaller than Earth, calculation errors start quickly accumulate and you have nice looking cracks in the ground (it worth mention that Kerbin 10 times smaller than Earth).
 

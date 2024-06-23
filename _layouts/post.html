@@ -33,7 +33,7 @@ tail_includes:
         </span>
       {% endif %}
 
-      {% if page.image %}
+      {% if page.image and page.show_preview_image %}
         {% capture src %}src="{{ page.image.path | default: page.image }}"{% endcapture %}
         {% capture class %}class="preview-img{% if page.image.no_bg %}{{ ' no-bg' }}{% endif %}"{% endcapture %}
         {% capture alt %}alt="{{ page.image.alt | xml_escape | default: "Preview Image" }}"{% endcapture %}
@@ -129,7 +129,7 @@ tail_includes:
     <div
       class="
         post-tail-bottom
-        d-flex justify-content-between align-items-center mt-5 pb-2
+        d-flex justify-content-between align-items-center mt-4 pb-2
       "
     >
       <div class="license-wrapper">
