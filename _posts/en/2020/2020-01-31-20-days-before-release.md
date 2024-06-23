@@ -26,7 +26,7 @@ This was necessary not only for aesthetic, but because you simply can't feel the
 
 Then January has come and I finally started internal playtesting. The first system that got hit, was rocket assembly. While the main concepts were clear to players, available tools were terrible. Parts usually were not placed where users wanted them to be, connections not working half of the time, sometimes saved rocket even not load after all that. So I wrote down a long list of issues and spent next 10 days fixing them all. The system still lacks a lot of features, like symmetry tools or batch operations, some parts attachments are less stable, then others, but the core is now rock solid. Even I started to feel more satisfaction while designing spacecrafts.
 
-[![](https://media.giphy.com/media/H4DJYCLIdgncl5B05B/giphy.gif)](steam://openurl_external/https://steamcommunity.com/linkfilter/?u=https%3A%2F%2Fgiphy.com%2Fgifs%2Fspacecraft-space-simulator-hdyliem-H4DJYCLIdgncl5B05B)
+![](https://media.giphy.com/media/H4DJYCLIdgncl5B05B/giphy.gif)
 _A bit rough but it is correctly positioning itself on slots_
 
 It was January 11, **40 days before release**. It became obvious that I will unable to deliver all three main parts of the game (spaceport building, rocket construction and space flights) with the same level of quality and comparable amount of content. And I couldn’t delay release even further, because then I need to find a job to pay my bills. And this means only part-time development on weekends and evenings. Which is extremely hard and would greatly increase development time. So I basically had two options:

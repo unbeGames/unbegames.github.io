@@ -39,4 +39,4 @@ _The first ever created model of launchpad_
 
 The other systems such as planet generation, basic spaceport building, orbital mechanics are in some form ready. So when the rocket construction will be implemented I can finally put them together and start to develop the basic game sequence. After that the content can finally start to arrive. It would be great to deliver the game with all described systems to the Early Access. If I will have not enough time for that, I will probably delay the spaceport building to the first update after EA, because the flight systems are fun even now, but spaceport building requires a lot of work and fine tuning to become interesting.
 
-In the next developer update I will talk in-depth about planet generation and the world of HDYLIEM. See you soon.
+In the next developer update I will talk in-depth about planet generation and the world of Rocket Science. See you soon.

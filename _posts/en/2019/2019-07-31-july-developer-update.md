@@ -22,7 +22,7 @@ The second one is to brining all game systems to the â€œready for Early Accessâ€
 ![Current water rendering](https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/72042ac74fd22953b4a6df3dc01c9ad99bdff096.png)
 _Not great, not terrible_
 
-I found a several good water shaders, but they work only on planes and need to be rewritten to work with planets. This is very interesting task and it will be really exciting if the water in HDYLIEM will look like this:
+I found a several good water shaders, but they work only on planes and need to be rewritten to work with planets. This is very interesting task and it will be really exciting if the water in Rocket Science will look like this:
 
 ![Planned water rendering](https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/41a312866d5f323c55e7be0b773474b76ab8d389.png)
 _Good water is usually 1/3 of the success_

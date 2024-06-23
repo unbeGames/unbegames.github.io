@@ -43,4 +43,4 @@ There are still a lot of work with this system. For example. I’ve solved diffe
 
 Thanks for attention and don’t forget to join our [Discord community](https://discord.gg/unbegames)!
 
-P.S. Valve have changed Steam algorithms two weeks ago and game’s store page traffic went almost to 0 after that. So, if you have friends, who love space and rockets, please send them link to the “How do you like it, Elon Musk” page. You are my only hope.
+P.S. Valve have changed Steam algorithms two weeks ago and game’s store page traffic went almost to 0 after that. So, if you have friends, who love space and rockets, please send them link to the “Rocket Science” page. You are my only hope.
