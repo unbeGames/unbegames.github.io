@@ -4,7 +4,9 @@
 
 {% assign all_list = '' | split: '' %}
 
-{% for post in site.posts %}
+{% assign site_posts = site.posts | where: 'lang', lang %}
+
+{% for post in site_posts %}
   {% assign datetime = post.last_modified_at | default: post.date %}
 
   {% capture elem %}
@@ -28,13 +30,11 @@
     <ul class="content list-unstyled ps-0 pb-1 ms-1 mt-2">
       {% for item in update_list %}        
         {% assign index = item | split: '::' | last | plus: 0 %}
-        {% assign post = site.posts[index] %}
-        {% assign url = post.url | relative_url %}
-        {% if post.lang == lang %}
-          <li class="text-truncate lh-lg">
-            <a href="{{ url }}">{{ post.title }}</a>
-          </li>
-        {% endif %}
+        {% assign post = site_posts[index] %}
+        {% assign url = post.url | relative_url %}        
+        <li class="text-truncate lh-lg">
+          <a href="{{ url }}">{{ post.title }}</a>
+        </li>
       {% endfor %}
     </ul>
   </section>

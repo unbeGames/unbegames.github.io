@@ -8,10 +8,9 @@ description: Orbital mechanics
 image: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/14ed4aa2a72c0aa043463164a92070616a2f46d9.png
 game: Rocket Science
 ---
-
 Hello, guys.
 
-Today I want to talk about orbital mechanics and spacecraft physics in "Rocket Science". Around the middle of December, I came to idea, that player will have no direct control over the spacecraft and all flights will be performed through the flight plans (you can read more about this in the [January Developer Update](/ru/posts/january-developer-update/)). Before that I had an arcade prototype of flights in the 2.5D, like in the thousands of other games on mobile stores, where you can fly up as long as you have fuel. You should collect resources, repair kits, avoid obstacles and so on. In other words, it looked like this:
+Today I want to talk about orbital mechanics and spacecraft physics in "Rocket Science". Around the middle of December, I came to idea, that player will have no direct control over the spacecraft and all flights will be performed through the flight plans (you can read more about this in the [January Developer Update](/en/posts/january-developer-update/)). Before that I had an arcade prototype of flights in the 2.5D, like in the thousands of other games on mobile stores, where you can fly up as long as you have fuel. You should collect resources, repair kits, avoid obstacles and so on. In other words, it looked like this:
 
 ![Rocket Science prototype](https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/df1a14651be0f54b733afb7322adc58d63501e31.png)
 _This is a screenshot from prototype that started it all_
