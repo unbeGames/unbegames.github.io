@@ -12,7 +12,7 @@ Greetings!
 
 Today I will talk about the rocket construction in “How do you like it, Elon Musk?”.
 
-As I described in the [January Developer Update](/en/posts/january-developer-update/) I had three ideas how to develop this system. And I had one important requirement, that this system needs to be simple enough but at the same time giving the possibility to combine rocket parts in different ways. So after some experimenting and theorycrafting I decided to stay with the slot-based system. But the problem was that there were at least five different approaches to creation of this system with its own advantages and disadvantages!
+As I described in the [January Developer Update](/en/posts/2019/january-developer-update/) I had three ideas how to develop this system. And I had one important requirement, that this system needs to be simple enough but at the same time giving the possibility to combine rocket parts in different ways. So after some experimenting and theorycrafting I decided to stay with the slot-based system. But the problem was that there were at least five different approaches to creation of this system with its own advantages and disadvantages!
 
 Let's imagine that we have four classic rocket parts: command module, decoupler, fuel tank and liquid fuel engine.
 
