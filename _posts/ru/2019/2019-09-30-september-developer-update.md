@@ -1,7 +1,7 @@
 ---
 author: Arugin
 title: "Дневник разработки: сетябрь"
-description: Битва за хорошую физику
+description: Битва за хорошую физику, часть 1
 date: 2019-09-30 20:52:00 +0300
 categories: [Rocket Science, Дневник разработки]
 tags: [rocket science]

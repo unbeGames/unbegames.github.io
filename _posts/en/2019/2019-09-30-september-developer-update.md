@@ -1,7 +1,7 @@
 ---
 author: Arugin
 title: September Developer Update
-description: The battle for good physics
+description: The battle for good physics, part 1
 date: 2019-09-30 20:52:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
