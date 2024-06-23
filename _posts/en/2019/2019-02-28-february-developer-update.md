@@ -3,7 +3,7 @@ author: Arugin
 title: February Developer Update
 date: 2019-02-28 17:09:00 +0300
 categories: [Rocket Science, Development Blog]
-tags: [rocket science] 
+tags: [rocket science]
 description: Planet generation
 image: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/0243674f6c7ad289ebd6693251e8c62bac3a0932.png
 game: Rocket Science
