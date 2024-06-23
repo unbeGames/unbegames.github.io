@@ -6,10 +6,11 @@ categories: [Rocket Science, Development Blog]
 tags: [rocket science]     # TAG names should always be lowercase
 description: The adventure begins
 image: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/6c91d88a480d31c543b1ffe108d8278e09048fbb.png
+game: Rocket Science
 ---
 Hello everyone!
 
-Here is the first Developer Update. Today I want to talk about features and decisions of "How do you like it, Elon Musk?", that make this game different from the main competitors, and what I need to do to successfully reach the release in the Early Access. One small note, before I start. The following is a current vision of the game, and it may and probably will change in the future, as it has happened before several times. You are now aware of possible changes, so let's begin.
+Here is the first Developer Update. Today I want to talk about features and decisions I made while working on "Rocket Science", that make this game different from the main competitors, and what I need to do to successfully reach the release in the Early Access. One small note, before I start. The following is a current vision of the game, and it may and probably will change in the future, as it has happened before several times. You are now aware of possible changes, so let's begin.
 
 ![Mars](https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/6c91d88a480d31c543b1ffe108d8278e09048fbb.png)
 _The first iteration of Mars_
@@ -25,7 +26,7 @@ You will have no direct control over the spacecraft. You will need to develop a 
 
 And in the current implementation:
 ![Implementation sample](https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/5f96a7f84c4a67eea375c37300719b0d70ce85d5.png)
-_Just and example how an implementation could look like_
+_Just an example of how an implementation of such flight plan could look like_
 
 If something will go wrong, you'll be able to send the set of correction commands to the rocket and hope it will solve you problems. You will also be able to reuse existing flight plans for the rockets of the same type and do not repeat the same tasks all over again (such as getting rocket on low Earth orbit). But this way of handling flight has a trade-off. Physics simulation should be much simpler and performed for the whole rocket at once, not for its parts. Without this simplification planning UI becomes slow, unresponsive and very frustrating to use. Maybe I will be able to solve this in one of the updates in the Early Access, but this part is not as critical as the other ones. 
 

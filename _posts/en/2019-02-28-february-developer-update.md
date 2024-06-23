@@ -6,9 +6,10 @@ categories: [Rocket Science, Development Blog]
 tags: [rocket science] 
 description: Planet generation
 image: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/0243674f6c7ad289ebd6693251e8c62bac3a0932.png
+game: Rocket Science
 ---
 
-Hello everyone and welcome to another developer update of “How do you like it, Elon Musk?”.  
+Hello everyone and welcome to another developer update of “Rocket Science”.  
 
 I've spent most of the last month trying to answer the question: “Can I generate planet in the game as big as Earth actually is?”. Moreover I wanted this planet to not only be big, but also look like Earth, because the lore of the game need this and because not many games try to do this. Usually there are completely procedurally generated planets in these games, but with the similar color scheme and physics parameters to the real ones from our Solar System. But this was not what I wanted from my game.
 

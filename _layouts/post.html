@@ -126,6 +126,12 @@ tail_includes:
       </div>
     {% endif %}
 
+    {% if page.game %}
+    <div class="post-tail-bottom d-flex justify-content-center align-items-center mt-4 pb-2">
+      <iframe class="steam-frame" src="https://store.steampowered.com/widget/{{site.data.games[page.game].app_id}}/?utm_source=unbegamesblog&utm_campaign=blogcampaign" allowtransparency frameborder="0" width="646" height="190" style="color-scheme: light;"></iframe>
+    </div>
+    {% endif %}
+
     <div
       class="
         post-tail-bottom
