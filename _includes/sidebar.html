@@ -66,7 +66,7 @@
 
       {% capture page_url %}{{ page.url | split: '/' | shift: shift | join: "/" }}{% endcapture %}
 
-      {% for locale in site.locales %}      
+      {% for locale in site.locales %}
         {% unless page_url contains 'categories/' or site.data.skip_locale[locale] contains page_url %}
           <span>
             <a {% if locale == lang %} style="font-weight: bold;"{% endif %} href="{{site.baseurl}}/{{ locale }}/{{page_url}}">{{ locale }}</a>
