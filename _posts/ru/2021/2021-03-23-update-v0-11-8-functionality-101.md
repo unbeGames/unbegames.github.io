@@ -1,6 +1,6 @@
 ---
 author: Arugin
-title: Update v0.11.8 "Functionality 101"
+title: Обновление v0.11.8 «Функциональность 101»
 description: Становясь лучше
 date: 2021-03-23 20:00:00 +0300
 categories: [Rocket Science, Обновление]
