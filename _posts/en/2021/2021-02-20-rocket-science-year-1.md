@@ -8,7 +8,7 @@ tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/b14eaa2e19bab7fe40b0477d4dc8ab6c957d34d0_400x225.png
 game: Rocket Science
 ---
-Hi there, fellow rocket builders! First and foremost, today marks the 1-year anniversary of Elon’s release on Steam!
+Hi there, fellow rocket builders! First and foremost, today marks the 1-year anniversary of Rocket Science release on Steam!
 
 It was an incredibly difficult but productive year, and I wanted to thank everyone who supported me during this time. Thanks to you, I was able to improve the game far beyond its release state and get an incredible feedback I never hoped to achieve.
 

@@ -27,7 +27,7 @@ Actually, It was expected. Every time you make such huge changes, a lot of bugs 
 ![](https://media.giphy.com/media/UW22Hj5SXe0EDK5qGS/giphy.gif)
 _^\_^_
 
-I finished development of Math simulation and decided to visit my parents, who live in another part of the country. As soon as I got to them, the COVID-19 outbreak happened in Russia and I stuck there in quarantine far from my development PC. But at least I had a laptop. It has no graphics card and able to run Elon at 15 FPS, and barely run Unity Editor. But I had an idea how to deal with it.
+I finished development of Math simulation and decided to visit my parents, who live in another part of the country. As soon as I got to them, the COVID-19 outbreak happened in Russia and I stuck there in quarantine far from my development PC. But at least I had a laptop. It has no graphics card and able to run Rocket Science at 15 FPS, and barely run Unity Editor. But I had an idea how to deal with it.
 
 The next task was a Maneuver Planner. It is quite separate from the entire game, because the only information it needed are the orbits, celestial bodies and changes in the velocity of the spacecraft.
 
@@ -63,6 +63,6 @@ The foundation for Maneuver Planner was ready. Three days ago I built a new PC t
 
 The next steps are to develop patched conic approximation, encounters, system for adding maneuver nodes not only to the current spacecraft orbit, but to the predicted ones too. And all of this is multiplied by Solar system scale and accuracy requirements. It sounds hard, but every problem seems to be hard until you start to solving it.
 
-The last thing I want to tell you, is that I started to work with Artur (the composer of Elon’s original soundtrack) on additional tracks for Assembly Shop, orbit, interplanetary flights and planets with and without atmosphere. They will be included into the game and OST on Steam with the next update.
+The last thing I want to tell you, is that I started to work with Artur (the composer of Rocket Science original soundtrack) on additional tracks for Assembly Shop, orbit, interplanetary flights and planets with and without atmosphere. They will be included into the game and OST on Steam with the next update.
 
 That’s all for now, see you in the next update.

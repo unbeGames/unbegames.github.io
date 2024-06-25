@@ -14,7 +14,7 @@ Today’s update is the first step in making rocket construction a more enjoyabl
 
 ## Assembly Shop
 
-Yes it’s finally here. You can build your rockets, using symmetry now! Since rocket parts can be attached to each other only using attachment points, symmetry in “How do you like it, Elon Musk?” works a bit differently than in other games.
+Yes it’s finally here. You can build your rockets, using symmetry now! Since rocket parts can be attached to each other only using attachment points, symmetry in “Rocket Science” works a bit differently than in other games.
 
 First of all, there is a new symmetry control panel where you can change symmetry count in different ways.
 
@@ -76,7 +76,7 @@ And last thing I want to point out is the game size on disk. Previously it was a
 
 Once you've downloaded the update, you may need to restart your Steam client. In the off chance the game isn't working properly for you after the update, please try verifying the game files:
 
-- right-click on How do you like it, Elon Musk? in your Steam Library
+- right-click on Rocket Science in your Steam Library
 - select 'Properties...', then select the 'Local Files' tab
 - select 'Verify Integrity of Game Files...'
 

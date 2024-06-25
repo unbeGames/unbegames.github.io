@@ -41,7 +41,7 @@ Basically, I had only second option. But the problem was that you can’t cut ro
 ![](https://clan.akamai.steamstatic.com/images//34094219/a5d13323024dbeb706f86d15f2f524dd221b172c.png)
 _I hear you loud and clear._
 
-There is only one thing that bothers me: now Elon will be in the same field with the giants such as KSP and other space sims. But they had so much more time to come to what they have now. Also it is very difficult to cut parts of the game you've put so much effort into. But I had no time for worries and regrets, I needed to get done the remaining systems. Here is a list of things I’ve worked on the next 20 days before this update.
+There is only one thing that bothers me: now Rocket Science will be in the same field with the giants such as KSP and other space sims. But they had so much more time to come to what they have now. Also it is very difficult to cut parts of the game you've put so much effort into. But I had no time for worries and regrets, I needed to get done the remaining systems. Here is a list of things I’ve worked on the next 20 days before this update.
 
 **Direct controls.** Yes! It is finally in the game. There were two problems that I faced: how to make a rocket staging and how to befriend a rocket auto stabilization system with the direct controls. There was nothing new I could add to staging, so it will look like in other games:
 

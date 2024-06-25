@@ -51,7 +51,7 @@ Parachute and landing struts were a new challenge to implement, because they hav
 
 ## Extended soundtrack
 
-11 new tracks were added into the game along with new ingame music system that would track your spacecraft state position and will change tracks depending on that. These tracks were also added into “How do you like it, Elon Musk? Soundtrack”, so all owners of this package will automatically receive them for free.
+11 new tracks were added into the game along with new ingame music system that would track your spacecraft state position and will change tracks depending on that. These tracks were also added into “Rocket Science Soundtrack”, so all owners of this package will automatically receive them for free.
 
 ![](https://clan.akamai.steamstatic.com/images//34094219/a9c665d2a55c2b8d081bb3f2b216c735a3a1dd1c.png)
 _A bunch of rockets were destroyed during development of this update_
