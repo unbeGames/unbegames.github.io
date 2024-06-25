@@ -3,8 +3,8 @@ author: Arugin
 title: May Developer Update
 description: The perfect cycle
 date: 2021-05-28 20:00:00 +0300
-categories: \[Rocket Science, Development Blog\]
-tags: \[rocket science\]
+categories: [Rocket Science, Development Blog]
+tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/228213a6d47e2adfbe6822d44bd63de74eae84eb_400x225.png
 game: Rocket Science
 ---
