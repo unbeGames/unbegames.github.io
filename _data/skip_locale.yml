@@ -3,6 +3,7 @@ en:
   - posts/2018/kak-ya-na-mars-raketu-otpravlyal
 ru:
   - .gitkeep
+  - page/4/index.html
   - posts/2021/may-developer-update
   - posts/2021/update-v0-12-5-the-fourth-planet
   - posts/2021/update-v0-13-0-space-stations
@@ -16,3 +17,5 @@ ru:
   - posts/2023/rocket-assembly-rework-stage-1
   - posts/2023/rocket-science-v0-18-2-is-now-live
   - posts/2023/dev-update-assembly-rework-stage-2
+  - posts/2023/update-v0-19-0-awakened-assembly-public-beta
+  - posts/2023/update-v0-19-6-awakened-assembly-is-out-of-beta
