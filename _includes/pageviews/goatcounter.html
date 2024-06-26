@@ -13,6 +13,7 @@
         pv.innerText = new Intl.NumberFormat().format(count);
       })
       .catch((error) => {
+        console.log(error);
         pv.innerText = '1';
       });
   }
