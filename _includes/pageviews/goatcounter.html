@@ -9,9 +9,8 @@
     fetch(url)
       .then(
         (response) => response.json(),
-        (error) => { 
-            console.log(error); // Never executes because the Promise is resolved
-      })
+        (error) =>console.log(error) // Never executes because the Promise is resolved
+      )
       .then((data) => {
         const count = data.count.replace(/\s/g, '');
         pv.innerText = new Intl.NumberFormat().format(count);
