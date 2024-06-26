@@ -7,7 +7,11 @@
     const url = `https://{{ site.analytics.goatcounter.id }}/counter/${encodeURIComponent(uri)}.json`;
 
     fetch(url)
-      .then((response) => response.json())
+      .then(
+        (response) => response.json(),
+        (error) => { 
+            console.log(error); // Never executes because the Promise is resolved
+      })
       .then((data) => {
         const count = data.count.replace(/\s/g, '');
         pv.innerText = new Intl.NumberFormat().format(count);
