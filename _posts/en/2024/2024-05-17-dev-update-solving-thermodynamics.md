@@ -7,6 +7,7 @@ categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/1a3e8879e3966d6c23bda0d203946c252e093842_400x225.png
 game: Rocket Science
+math: true
 ---
 Greetings, fellow rocket scientists!
 
@@ -40,10 +41,14 @@ _My brain immediately turns off when I see something like this_
 
 But I found an approximation that I could use to begin with.
 
-![](https://clan.akamai.steamstatic.com/images//34094219/6eb7396549fd16d5077f1196d5d1e25356a44e0d.png)
-_Nice and simple formula, but..._
+$$
+\begin{equation}
+  q_{s} = k\left ( \frac{p}{R_{n}} \right )^{0.5}V^{3}
+  \label{eq:aerodynamics_heating_flux}
+\end{equation}
+$$
 
-The problem is that k is the precalculated constant for a specific atmosphere and I found values for it only for Earth and Mars. Also R is the bluntness of the rocket part. I understand what this means and why it is there but I didn’t find out yet how this value is calculated or at least in what ranges it lies. If you know any of this or at least could point me in the right direction please let me know in the comments below.
+Nice and simple formula, but the problem is that k is the precalculated constant for a specific atmosphere and I found values for it only for Earth and Mars. Also R is the bluntness of the rocket part. I understand what this means and why it is there but I didn’t find out yet how this value is calculated or at least in what ranges it lies. If you know any of this or at least could point me in the right direction please let me know in the comments below.
 
 Enough of math for today. Let’s talk about the visual component of reentry heating. It is a combination of plasma and flames which should encompass the spacecraft when it enters the atmosphere at a high speed.
 
