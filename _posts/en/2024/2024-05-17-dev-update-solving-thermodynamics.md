@@ -36,7 +36,7 @@ While you can find an analytical solution for thermal radiation integration, it 
 
 As for aerodynamic heating it is much more complicated than everything I encountered before. There are dozens of papers published by NASA with complicated math I can barely wrap my head around. And even if I could understand all of this, it would be very computationally expensive to add into the game.
 
-![](https://clan.akamai.steamstatic.com/images//34094219/3e06110ca0b5e0ebb5d9beb7b23cc67fbbd7bc13.png)
+![](https://clan.akamai.steamstatic.com/images/34094219/3e06110ca0b5e0ebb5d9beb7b23cc67fbbd7bc13.png)
 _My brain immediately turns off when I see something like this_
 
 But I found an approximation that I could use to begin with.
@@ -112,7 +112,7 @@ So I’ve written a special tool for Unity, that can convert meshes with a singl
 
 ![](https://clan.akamai.steamstatic.com/images//34094219/7544529b31979180cc1abd34df763201a9a13236.png)
 
-While the process is greatly automated now, it still requires a bunch of manual tweaking for each rocket part. I think this is as far as I can push automation forward. And I beleive I have a good foundation now on which thermodynamics effects will be built upon. But there are still a lot of work with the shader. I need to account parts occlusion, rocket bounds, add flutter and pulse, also make it more dynamic and varied.
+While the process is greatly automated now, it still requires a bunch of manual tweaking for each rocket part. I think this is as far as I can push automation forward. And I believe I have a good foundation now on which thermodynamics effects will be built upon. But there are still a lot of work with the shader. I need to account parts occlusion, rocket bounds, add flutter and pulse, also make it more dynamic and varied.
 
 ![](https://clan.akamai.steamstatic.com/images//34094219/c3ae68eda2e44f46a3e6f2bcf7ebd84e61a1a50a.png)
 _Here is a quick proof of concept, that it will work for assembled rocket_
