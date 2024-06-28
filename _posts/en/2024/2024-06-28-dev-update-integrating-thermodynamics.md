@@ -24,11 +24,11 @@ $$
 \end{equation}
 $$
 
-_A temperature change due to thermal radiation, where: $$ T_{0} $$ is the rocket part starting temperature in Kelvins, $$ A $$ is the total area of the part in square meters, $$ ε $$ is the part thermal emissivity, $$ m $$ is the mass of the rocket part in kg, $$ C\_{m} $$ is the body's thermal capacity, $$ σ $$ is Stefan–Boltzmann constant, $$ t $$ is time. Note, that the ambient temperature not accounted there. More on that in the next article._
+_A temperature change due to thermal radiation, where: $$ T_{0} $$ is the rocket part starting temperature in Kelvins, $$ A $$ is the total area of the part in square meters, $$ ε $$ is the part thermal emissivity, $$ m $$ is the mass of the rocket part in kg, $$ C_{m} $$ is the body's thermal capacity, $$ σ $$ is Stefan–Boltzmann constant, $$ t $$ is time. Note, that the ambient temperature not accounted there. More on that in the next article._
 
 But before I could apply it I needed to introduce a lot of missing parameters to rocket parts. For example, just for thermal radiation every rocket part needs the following stats: temperature, exposed to space area, thermal capacity, emissivity and of course mass. Only the mass is currently in the game. While some params like thermal capacity could be set depending on what I want to achieve, others need to be calculated. Like area, which directly depends on the shape of the part. And I can’t use the area previously calculated for aerodynamics, since it is projection to the side of the cube area and I needed a true one. Thankfully, this one was relatively easy to solve. I just calculated the area of each triangle for each mesh for the rocket part and summed them up. And then repeated for each rocket part currently in the game. Unfortunately I couldn’t fully automate this process like I did it for aerodynamics (those part processing you see every time a game starts for the first time after each update), because Unity then will consume two times more memory for each part mesh which is not acceptable.
 
-![One of many tools I did for this update](https://clan.akamai.steamstatic.com/images/34094219/c51a57609b1d596593a997631b7c3a15b220cd12.png)  
+![One of many tools I did for this update](https://clan.akamai.steamstatic.com/images/34094219/c51a57609b1d596593a997631b7c3a15b220cd12.png)
 _One of many tools I did for this update_
 
 It doesn't take that long, but it is a very routine process: put the selected part in a special tool, press a button, get an estimated area value, write this number into part config, repeat this process for 150 parts…
@@ -37,10 +37,10 @@ Finally I got all the data I needed, solved the differential equation and got $$
 
 ## Solar irradiance
 
-I decided to implement solar thermal radiation next. This one depends on distance to the Sun and it can’t be solved as a function of time because of orbital mechanics. But the distance to the Sun changes drastically only during interplanetary transfer and you can integrate it with a pretty large time step. But there are two problems with this approach: the orientation of spacecraft and a planet’s shadow. See, I decided to calculate incoming solar radiation depending on what side the spacecraft faces the Sun. The larger an illuminated area, the greater incoming heat flux. But this has the same problem as with solar panels. On big time warp steps it would underestimate or overestimate heating received heating and electricity depending on orientation on sampling point with the exception of the case when the Sun set as target and spacecraft pointed to it. The same goes for the planet's shadow. Spacecraft could be outside or inside of the shadow in every step which will yield inaccurate results. I haven't solved this problem yet, but it is not that critical and I will find a solution in the future.
+I decided to implement solar thermal radiation next. This one depends on distance to the Sun and it can’t be solved as a function of time because of orbital mechanics. But the distance to the Sun changes drastically only during interplanetary transfer and you can integrate it with a pretty large time step. But there are two problems with this approach: the orientation of spacecraft and a planet’s shadow. See, I decided to calculate incoming solar radiation depending on what side the spacecraft faces the Sun. The larger an illuminated area, the greater incoming heat flux. But this has the same problem as with solar panels. On big time warp steps it would underestimate or overestimate received heating and electricity depending on orientation on sampling point with the exception of the case when the Sun set as target and spacecraft pointed to it. The same goes for the planet's shadow. Spacecraft could be outside or inside of the shadow in every step which will yield inaccurate results. I haven't solved this problem yet, but it is not that critical and I will find a solution in the future.
 
-![](https://www.nasa.gov/wp-content/uploads/2023/03/m7.3-flare.jpeg)  
-_This image was captured by NASA’s Solar Dynamics Observatory on January 5, 2023 and thematically fit into this section of the article_
+![](https://www.nasa.gov/wp-content/uploads/2023/03/m7.3-flare.jpeg)
+_The source of many heating problems in space. This image was captured by NASA’s Solar Dynamics Observatory on January 5, 2023._
 
 To approximate lit surface area I used the same technique as for aerodynamics. I approximate each rocket part as a cuboid, where the area of each face equals the projected area of the rocket part onto the corresponding cube face. Then you can easily use dot product between cube normal and the direction to the Sun to find the amount of incoming light. And the amount of heat flux from the Sun is calculated using the same Stefan–Boltzmann law, since the Sun can be modeled as a black body.
 
@@ -51,13 +51,13 @@ $$
 \end{equation}
 $$
 
-_where: $$ Q_{s} $$ is heat flux from the Sun, $$ n = 6 $$ is the number of cube faces, $$ A\_{i} $$ is the face area of cuboid approximation, $$ N\_{i} $$ is the cube face normal to the Sun, $$ L $$ is direction from spacecraft to the Sun, $$ a $$ is the part thermal absorption coefficient, $$ ε\_{s} = 1 $$ is the Sun emissivity, $$ T\_{s} $$ is the temperature of the Sun in Kelvin, $$ R\_{s} $$ is the Sun radius in meters, $$ D $$ is the distance to the Sun in meters._
+_where: $$ Q_{s} $$ is heat flux from the Sun, $$ n = 6 $$ is the number of cube faces, $$ A_{i} $$ is the face area of cuboid approximation, $$ N_{i} $$ is the cube face normal to the Sun, $$ L $$ is direction from spacecraft to the Sun, $$ a $$ is the part thermal absorption coefficient, $$ ε_{s} = 1 $$ is the Sun emissivity, $$ T_{s} $$ is the temperature of the Sun in Kelvin, $$ R_{s} $$ is the Sun radius in meters, $$ D $$ is the distance to the Sun in meters._
 
 After adding temperature change due to solar irradiance using $$ \eqref{eq:solar_irradiance} $$ I observed how the spacecraft reached the thermal equilibrium at around -50 C° on the low Earth orbit. It was cool to see how the temperature drops every time the spacecraft enters the Earth’s shadow. And then heat up on the dayside of the planet. But what I also immediately noticed, that all the parts have very large differences in temperature depending on its mass and area. This was fine, but the temperature should slowly even out. And I suddenly realized I'd completely forgotten about thermal conduction inside the rocket.
 
 ## Thermal conductivity
 
-I’ve spent another couple of days researching and solving equations. And I needed another two parameters for parts: thermal conductivity and connection area. I tried a more simple implementation at first where parts would transfer heat to an abstract “rocket” and then “rocket” would redistribute the heat to every part back. This worked well and was very fast in computation, but I was not satisfied. Imagine a long spacecraft that for some reason heated on the one end. I wanted to see how heat slowly flows from one side of the spacecraft to another. And simplified calculations obviously couldn’t give that. I’ve sat down and implemented this properly, so every rocket part transfers heat through attachments via conduction to every other part. And I also made it in such a way, so it would work fast and scale well with the large number of parts.
+I’ve spent another couple of days researching and solving equations. And I needed another two parameters for parts: thermal conductivity and connection area. I tried a more simple implementation at first where parts would transfer heat to an abstract “rocket” and then “rocket” would redistribute the heat to every part back. This worked well and was very fast in computation, but I was not satisfied with the results. Imagine a long spacecraft that for some reason heated on the one end. I wanted to see how heat slowly flows from one side of the spacecraft to another. And simplified calculations obviously couldn’t give that. I’ve sat down and implemented this properly, so every rocket part transfers heat through attachments via conduction to every other part. And I also made it in such a way, so it would work fast and scale well with the large number of parts.
 
 As for the equation, I reached a limit of my solving skills. Resulting equations gave me strange results: parts transferred heat too quickly or too slowly. In the end I found an approximation that produced satisfying results, but probably not entirely physically correct.
 
@@ -102,7 +102,7 @@ Finally, after almost two months of work, I could see a feature I wanted to impl
 ![](https://media1.giphy.com/media/v1.Y2lkPTc5MGI3NjExNTk1OWo1MWZuZDA4dG5kdnNmamx4ZWJ6ejhtcDFkNjk5NG9mNmoxbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/qGivqxP57mWGzB8rEU/giphy.gif)
 _As always, there are a lot of things that need to be improved here, but it already feels good_
 
-While burning dozens of spacecraft in the atmosphere, I noticed that something was missing. Some parts heated too quickly, some others slower than I expected. It seems like only two parameters affected the gain of the temperature: surface area and mass (since at that point I set thermal capacity to equal values for all parts). But we have another important one: volume, and it didn't affect thermodynamic processes at all.
+While burning dozens of spacecrafts in the atmosphere, I noticed that something was missing. Some parts heated too quickly, some others slower than I expected. It seems like only two parameters affected the gain of the temperature: surface area and mass (since at that point I set thermal capacity to equal values for all parts). But we have another important one: volume, and it didn't affect thermodynamic processes at all.
 
 ## Back to conductivity
 
@@ -160,3 +160,7 @@ While I've made a huge progress last month in thermodynamics development, there 
 To summarize, I need another two or three weeks to finally finish thermodynamics and then to switch to flight UI improvements mentioned above. There are a lot of reported bugs by players waiting for my attention too. And a lot of new parts are sitting in the planned queue waiting to be implemented. And a bunch of QoL improvements I wanted to make in v0.22.0. There is a lot to do, so let's not waste any more time and get to work.
 
 Thanks for reading this and have a nice flight!
+
+---
+
+Discuss this article [on Steam](https://store.steampowered.com/news/app/890520/view/4236280100250023325).
