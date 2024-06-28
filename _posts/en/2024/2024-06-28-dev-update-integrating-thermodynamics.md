@@ -2,7 +2,7 @@
 author: Arugin
 title: "Dev Update: Integrating Thermodynamics"
 description: It's getting hotter
-date: 2024-06-26 21:00:00 +0300
+date: 2024-06-28 16:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/1f199311293a00eda7cf2b42ef926ee399a8b0ea.png
