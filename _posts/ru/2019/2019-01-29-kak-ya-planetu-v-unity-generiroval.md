@@ -2,14 +2,14 @@
 author: Arugin
 title: Как я планету в Unity генерировал
 description: Исследование предметной области
-date: 2019-01-29 20:00:00 +0300
+date: 2019-01-29 21:00:00 +0300
 categories: [Rocket Science, Статья]
 tags: [rocket science]  
-image: https://leonardo.osnova.io/5f1b2b3a-8582-de67-6345-06ebe7795a7d/-/preview/600x/-/format/webp
+image: https://clan.akamai.steamstatic.com/images/32055644/eebd064c94cfc70288cf1205d6612232856f0709.png
 game: Rocket Science
 ---
 
-Это вторая часть истории о том, как разрабатывалась игра «How do you like it, Elon Musk?», в которой я оставлю [счастливые озарения](https://dtf.ru/indie/34184-kak-ya-na-mars-raketu-otpravlyal) позади и поговорю о страданиях с Unity, которые незамедлительно появляются, когда ты хочешь создать на движке чуть больше, чем просто 2D платформер.
+Это вторая часть истории о том, как разрабатывалась игра «Rocket Science», в которой я оставлю [счастливые озарения](/ru/posts/2018/kak-ya-na-mars-raketu-otpravlyal/) позади и поговорю о страданиях с Unity, которые незамедлительно появляются, когда ты хочешь создать на движке чуть больше, чем просто 2D платформер.
 
 ![В одном шаге от No Man's Sky каким он был на релизе](https://clan.akamai.steamstatic.com/images/32055644/eebd064c94cfc70288cf1205d6612232856f0709.png)
 _В одном шаге от No Man's Sky каким он был на релизе_
