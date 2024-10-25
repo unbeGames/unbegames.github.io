@@ -2,7 +2,7 @@
 author: Arugin
 title: "Dev Update: Assembly Rework, Stage 3" 
 description: Every problem will be solved eventually
-date: 2024-10-25 19:00:00 +0300
+date: 2024-10-25 18:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]  
 image: https://clan.fastly.steamstatic.com/images/32055644/8aeaf27f20105b16148486858c7720f5ebb71022.png
