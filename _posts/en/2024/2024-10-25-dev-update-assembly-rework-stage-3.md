@@ -10,7 +10,7 @@ game: Rocket Science
 ---
 This is the third and, I hope, the final part of assembly rework. If you’ve interested in reading the beginning of this story, you can check out the [first](/en/posts/2023/rocket-assembly-rework-stage-1/) and [second](/en/posts/2023/dev-update-assembly-rework-stage-2/) stage articles. Otherwise, let’s get started.
 
-## The Problem
+## The Problem 
 
 I have been collecting feedback about the game for more than four years now. Different players like or don't like different things about the game, but they all can agree on the one thing: the current attachment system is too restrictive and not easy to work with. I’ve acknowledged this problem and tried to improve rocket assembly over the years, that’s why I’ve made the previous two reworks. While the attachment system became much better than on the game's early access release, it is still far from what I (and other players) want from the rocket assembly.
 
