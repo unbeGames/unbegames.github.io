@@ -1,7 +1,7 @@
 ---
 author: Arugin
 title: "Dev Update: Communications" 
-description: 
+description: A picture is worth a thousand words. A satellite signal is worth a million dollars.
 date: 2025-03-14 19:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]  
