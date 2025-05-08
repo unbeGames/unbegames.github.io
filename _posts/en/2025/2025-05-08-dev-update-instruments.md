@@ -1,7 +1,7 @@
 ---
 author: Arugin
 title: "Dev Update: Instruments" 
-description: "Two possibilities exist: either we lose the connection or we it will be too weak. Both are equally terrifying"
+description: "Two possibilities exist: either we lose the connection or it will be too weak. Both are equally terrifying"
 date: 2025-05-08 18:30:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]  
