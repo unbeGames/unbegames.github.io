@@ -126,7 +126,7 @@ It completely stops the craft on contact like it crashed into a collider. But wh
 ![From the space to the water](https://upload.wikimedia.org/wikipedia/commons/0/0e/Qualitive_variation_of_cd_with_mach_number.png)
 _This is how drag coefficient behaves in the air_
 
-![From the space to the water](32055644/b27eca0956eb806d4e0604cf86f450b6adfa1e57.png)
+![From the space to the water](https://clan.cloudflare.steamstatic.com/images/32055644/b27eca0956eb806d4e0604cf86f450b6adfa1e57.png)
 _This is how drag coefficient behaves in the water_
 
 Here we go, more math and physics, yay! There is no direct way to calculate drag coefficient dependency on just speed. As you can see from the graphs I need to calculate Reynolds number as well as dynamic viscosity, characteristics length and the way to approximate those Cd reduction curves.
