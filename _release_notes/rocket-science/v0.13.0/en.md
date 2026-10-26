@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.13.0"
+type: update
+name: 'Space stations'
 release_date: 2021-10-08
 lang: en
-title: 'Release notes v0.13.0'
+title: 'v0.13.0 "Space stations" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.13.0/
 ---
 ### Features:

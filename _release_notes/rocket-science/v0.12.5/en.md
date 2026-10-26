@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.12.5"
+type: update
+name: 'The Fourth Planet'
 release_date: 2021-07-02
 lang: en
-title: 'Release notes v0.12.5'
+title: 'v0.12.5 "The Fourth Planet" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.12.5/
 ---
 ### Features:

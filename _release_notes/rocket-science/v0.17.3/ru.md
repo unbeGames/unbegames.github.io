@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.17.3"
+type: update
+name: 'Within The Horizon'
 release_date: 2022-12-22
 lang: ru
-title: 'Release notes v0.17.3'
+title: 'v0.17.3 "Within The Horizon" Release Notes'
 permalink: /ru/games/rocket-science/releases/v0.17.3/
 ---
 ### Features:

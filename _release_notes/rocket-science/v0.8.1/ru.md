@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.8.1"
+type: update
+name: 'На Луну!'
 release_date: 2020-08-25
 lang: ru
-title: 'Release notes v0.8.1'
+title: 'v0.8.1 "На Луну!" Release Notes'
 permalink: /ru/games/rocket-science/releases/v0.8.1/
 ---
 ### Features:

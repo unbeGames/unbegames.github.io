@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.18.2"
+type: update
+name: 'Connectivity'
 release_date: 2023-03-17
 lang: en
-title: 'v0.18.2 release notes'
+title: 'v0.18.2 "Connectivity" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.18.2/
 ---
 ### Features:

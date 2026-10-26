@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.9.0"
+type: update
+name: 'Легче легкого'
 release_date: 2020-09-29
 lang: ru
-title: 'Release notes v0.9.0'
+title: 'v0.9.0 "Легче легкого" Release Notes'
 permalink: /ru/games/rocket-science/releases/v0.9.0/
 ---
 ### Features:

@@ -4,6 +4,7 @@ refactor: true
 ---
 
 {% include lang.html %}
+{% include origin-type.html %}
 {% assign game_data = site.data.games[page.game] %}
 
 <article class="game-page px-1">
@@ -26,9 +27,9 @@ refactor: true
             ></iframe>
           </div>
         {% endfor %}
-        <div id="game-screenshot" class="game-media">
+        <button id="game-screenshot" class="game-media game-screenshot-trigger" type="button" aria-label="">
           <div class="game-screenshot-image" role="img" aria-label=""></div>
-        </div>
+        </button>
       </div>
 
       <div class="game-thumbnails" aria-label="{{ site.data.locales[lang].games.screenshots }}">
@@ -40,7 +41,7 @@ refactor: true
         {% endfor %}
         {% for screenshot in game_data.screenshots %}
           {% assign thumbnail = screenshot | replace: '.1920x1080', '.116x65' %}
-          <button class="game-thumbnail" type="button" data-game-screenshot="{{ screenshot }}" data-game-alt="{{ page.title }} — screenshot {{ forloop.index }}" aria-label="Screenshot {{ forloop.index }}" aria-pressed="false">
+          <button class="game-thumbnail" type="button" data-game-screenshot="{{ screenshot }}" data-game-screenshot-index="{{ forloop.index0 }}" data-game-alt="{{ page.title }} — screenshot {{ forloop.index }}" aria-label="Screenshot {{ forloop.index }}" aria-pressed="false">
             <span class="game-thumbnail-image" style="background-image: url('{{ thumbnail }}')"></span>
           </button>
         {% endfor %}
@@ -48,7 +49,7 @@ refactor: true
     </section>
 
     <aside class="col-md-4 game-summary">
-      <img class="game-capsule" src="{{ game_data.capsule }}" alt="{{ page.title }}">
+      <div class="game-capsule" role="img" aria-label="{{ page.title }}" style="background-image: url('{{ game_data.capsule }}')"></div>
       <p>{{ page.description }}</p>
       <dl>
         <dt>{{ site.data.locales[lang].games.release_date }}</dt>
@@ -80,7 +81,7 @@ refactor: true
             {% endif %}
             {% if show_release %}
               <li>
-                <a href="{{ release.url | relative_url }}">{{ release.title }}</a>
+                <a href="{{ release.url | relative_url }}">v{{ release.version }}{% if release.type == 'update' and release.name %} "{{ release.name }}"{% endif %}</a>
                 <span>{% include datetime.html date=release.release_date lang=lang %}</span>
               </li>
             {% endif %}
@@ -104,13 +105,42 @@ refactor: true
   </div>
 </article>
 
+<link rel="stylesheet" href="{{ site.data.origin[type].glightbox.css | relative_url }}">
+<script src="{{ site.data.origin[type].glightbox.js | relative_url }}"></script>
+
 <script>
   (() => {
     const media = document.querySelectorAll('.game-media');
     const thumbnails = document.querySelectorAll('.game-thumbnail');
+    const thumbnailStrip = document.querySelector('.game-thumbnails');
     const screenshotPanel = document.getElementById('game-screenshot');
     const screenshotImage = screenshotPanel.querySelector('.game-screenshot-image');
+    const screenshotSlides = [
+      {% for screenshot in game_data.screenshots %}
+        { href: {{ screenshot | jsonify }}, type: 'image' }{% unless forloop.last %},{% endunless %}
+      {% endfor %}
+    ];
     let imageRequest = 0;
+    let activeScreenshot = -1;
+    let screenshotLightbox = null;
+
+    const advanceThumbnailStrip = (button) => {
+      if (thumbnailStrip.scrollWidth <= thumbnailStrip.clientWidth) return;
+
+      const stripRect = thumbnailStrip.getBoundingClientRect();
+      const visibleThumbnails = [...thumbnails].filter((item) => {
+        const itemRect = item.getBoundingClientRect();
+        return itemRect.right > stripRect.left && itemRect.left < stripRect.right;
+      });
+
+      if (visibleThumbnails.at(-1) !== button) return;
+
+      const buttonRect = button.getBoundingClientRect();
+      thumbnailStrip.scrollTo({
+        left: thumbnailStrip.scrollLeft + buttonRect.left - stripRect.left,
+        behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches ? 'auto' : 'smooth'
+      });
+    };
 
     const activate = (panel, button) => {
       media.forEach((item) => item.classList.remove('is-active'));
@@ -125,6 +155,7 @@ refactor: true
 
     document.querySelectorAll('[data-game-media]').forEach((button) => {
       button.addEventListener('click', () => {
+        advanceThumbnailStrip(button);
         imageRequest += 1;
         activate(document.getElementById(button.dataset.gameMedia), button);
       });
@@ -132,6 +163,7 @@ refactor: true
 
     document.querySelectorAll('[data-game-screenshot]').forEach((button) => {
       button.addEventListener('click', () => {
+        advanceThumbnailStrip(button);
         const request = ++imageRequest;
         const image = new Image();
         image.decoding = 'async';
@@ -139,10 +171,22 @@ refactor: true
           if (request !== imageRequest) return;
           screenshotImage.style.backgroundImage = `url("${image.src}")`;
           screenshotImage.setAttribute('aria-label', button.dataset.gameAlt);
+          screenshotPanel.setAttribute('aria-label', button.dataset.gameAlt);
+          activeScreenshot = Number(button.dataset.gameScreenshotIndex);
           activate(screenshotPanel, button);
         };
         image.src = button.dataset.gameScreenshot;
       });
+    });
+
+    window.addEventListener('load', () => {
+      screenshotLightbox = GLightbox({ elements: screenshotSlides });
+    });
+
+    screenshotPanel.addEventListener('click', () => {
+      if (screenshotLightbox && activeScreenshot >= 0) {
+        screenshotLightbox.openAt(activeScreenshot);
+      }
     });
   })();
 </script>

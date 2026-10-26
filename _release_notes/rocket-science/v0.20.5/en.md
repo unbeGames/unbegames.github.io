@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.20.5"
+type: update
+name: 'In Between'
 release_date: 2023-12-29
 lang: en
-title: 'v0.20.5 release notes'
+title: 'v0.20.5 "In Between" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.20.5/
 ---
 ### Features:

@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.9.0"
+type: update
+name: 'Make it Easy'
 release_date: 2020-09-29
 lang: en
-title: 'Release notes v0.9.0'
+title: 'v0.9.0 "Make it Easy" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.9.0/
 ---
 ### Features:

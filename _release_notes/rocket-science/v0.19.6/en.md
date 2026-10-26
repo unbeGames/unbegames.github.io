@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.19.6"
+type: update
+name: 'Awakened Assembly'
 release_date: 2023-07-04
 lang: en
-title: 'v0.19.6 release notes'
+title: 'v0.19.6 "Awakened Assembly" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.19.6/
 ---
 **PREVIOUS SAVES ARE NOT COMPATIBLE WITH THIS VERSION OF THE GAME.**  

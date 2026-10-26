@@ -69,12 +69,24 @@ body:has(.game-page) {
   }
 }
 
+.game-screenshot-trigger {
+  padding: 0;
+  border: 0;
+  background: transparent;
+  cursor: zoom-in;
+}
+
 .game-thumbnails {
   display: flex;
   gap: 0.5rem;
   margin-top: 0.6rem;
   padding-bottom: 0.35rem;
   overflow-x: auto;
+
+  &::after {
+    flex: 0 0 calc(100% - 112px - 0.5rem);
+    content: '';
+  }
 }
 
 .game-thumbnail {
@@ -117,8 +129,12 @@ body:has(.game-page) {
 .game-summary {
   .game-capsule {
     width: 100%;
+    aspect-ratio: 460 / 215;
     margin-bottom: 1rem;
     border-radius: 0.3rem;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   dl {

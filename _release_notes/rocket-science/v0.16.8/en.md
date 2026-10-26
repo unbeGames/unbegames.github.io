@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.16.8"
+type: update
+name: 'The First Planet'
 release_date: 2022-06-17
 lang: en
-title: 'Full release notes v0.16.8'
+title: 'v0.16.8 "The First Planet" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.16.8/
 ---
 ### Features:

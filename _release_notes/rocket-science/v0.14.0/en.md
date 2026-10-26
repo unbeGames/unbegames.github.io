@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.14.0"
+type: update
+name: 'Unexpected Outcomes'
 release_date: 2021-12-24
 lang: en
-title: 'Release notes v0.14.0'
+title: 'v0.14.0 "Unexpected Outcomes" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.14.0/
 ---
 ### Features:

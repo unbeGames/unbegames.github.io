@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.15.0"
+type: update
+name: 'A New Beginning'
 release_date: 2022-03-10
 lang: en
-title: 'Release notes v0.15.0'
+title: 'v0.15.0 "A New Beginning" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.15.0/
 ---
 ### Features:

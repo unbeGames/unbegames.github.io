@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.21.0"
+type: update
+name: 'Essentials'
 release_date: 2024-03-29
 lang: en
-title: 'v0.21.0 release notes'
+title: 'v0.21.0 "Essentials" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.21.0/
 ---
 ### Features:

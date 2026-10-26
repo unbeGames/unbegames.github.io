@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.10.1"
+type: update
+name: 'Добро пожаловать в Мастерскую'
 release_date: 2020-12-24
 lang: ru
-title: 'Release notes v0.10.1'
+title: 'v0.10.1 "Добро пожаловать в Мастерскую" Release Notes'
 permalink: /ru/games/rocket-science/releases/v0.10.1/
 ---
 ### Features:

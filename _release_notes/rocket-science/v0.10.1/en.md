@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.10.1"
+type: update
+name: 'Welcome to Workshop'
 release_date: 2020-12-24
 lang: en
-title: 'Release notes v0.10.1'
+title: 'v0.10.1 "Welcome to Workshop" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.10.1/
 ---
 ### Features:

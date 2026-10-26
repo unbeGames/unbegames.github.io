@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.7.8"
+type: update
+name: 'Regain Control'
 release_date: 2020-03-12
 lang: en
-title: 'v0.7.8 release notes'
+title: 'v0.7.8 "Regain Control" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.7.8/
 ---
 ### Features:

@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.11.8"
+type: update
+name: 'Functionality 101'
 release_date: 2021-03-23
 lang: en
-title: 'Release notes v0.11.8'
+title: 'v0.11.8 "Functionality 101" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.11.8/
 ---
 ### Features:

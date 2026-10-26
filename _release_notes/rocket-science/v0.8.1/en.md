@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.8.1"
+type: update
+name: 'To the Moon!'
 release_date: 2020-08-25
 lang: en
-title: 'Release notes v0.8.1'
+title: 'v0.8.1 "To the Moon!" Release Notes'
 permalink: /en/games/rocket-science/releases/v0.8.1/
 ---
 ### Features:

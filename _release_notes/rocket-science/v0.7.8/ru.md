@@ -1,9 +1,11 @@
 ---
 game: rocket-science
 version: "0.7.8"
+type: update
+name: 'Восстановление контроля'
 release_date: 2020-03-12
 lang: ru
-title: 'v0.7.8 release notes'
+title: 'v0.7.8 "Восстановление контроля" Release Notes'
 permalink: /ru/games/rocket-science/releases/v0.7.8/
 ---
 ### Features:
