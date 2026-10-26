@@ -1,0 +1,18 @@
+{% assign game_data = site.data.games[game.game] %}
+<article class="card-wrapper card game-card">
+  <a href="{{ game.url | relative_url }}" class="post-preview row g-0 flex-md-row-reverse">
+    <div class="col-md-5">
+      <img src="{{ game_data.capsule }}" alt="{{ game.title | escape }}" loading="lazy">
+    </div>
+    <div class="col-md-7">
+      <div class="card-body d-flex flex-column">
+        <h2 class="card-title my-2 mt-md-0">{{ game.title }}</h2>
+        <div class="card-text content mt-0 mb-3"><p>{{ game.description }}</p></div>
+        <div class="post-meta game-release-date mt-auto d-flex align-items-center">
+          <i class="far fa-calendar fa-fw" aria-hidden="true"></i>
+          <span>{{ site.data.locales[lang].games.release_date }}: {% include datetime.html date=game.release_date lang=lang %}</span>
+        </div>
+      </div>
+    </div>
+  </a>
+</article>

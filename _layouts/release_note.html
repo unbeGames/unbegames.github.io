@@ -11,7 +11,11 @@ panel_includes:
   <header>
     <h1 data-toc-skip>{{ page.title }}</h1>
     <div class="post-meta text-muted">
-      <span>{{ site.data.games[page.game].title | default: page.game }}</span>
+      {% assign game_page = site.games | where: 'game', page.game | where: 'lang', lang | first %}
+      {% unless game_page %}
+        {% assign game_page = site.games | where: 'game', page.game | where: 'lang', 'en' | first %}
+      {% endunless %}
+      <a href="{{ game_page.url | relative_url }}">{{ game_page.title | default: site.data.games[page.game].title | default: page.game }}</a>
       <span>{% include datetime.html date=page.release_date tooltip=true lang=lang %}</span>
     </div>
   </header>

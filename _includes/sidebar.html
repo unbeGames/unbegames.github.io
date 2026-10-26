@@ -30,10 +30,16 @@
         <!-- the real tabs -->
         {% for tab in site.tabs %}
           {% if tab.lang == lang %}
-            <li class="nav-item{% if tab.url == page.url %}{{ " active" }}{% endif %}">
+            {% capture tab_name %}{{ tab.url | split: '/' | last }}{% endcapture %}
+            {% assign games_active = false %}
+            {% if tab_name == 'games' and page.game %}
+              {% if page.collection == 'games' or page.collection == 'release_notes' %}
+                {% assign games_active = true %}
+              {% endif %}
+            {% endif %}
+            <li class="nav-item{% if tab.url == page.url or games_active %}{{ " active" }}{% endif %}">
               <a href="{{ tab.url | relative_url }}" class="nav-link">
                 <i class="fa-fw {{ tab.icon }}"></i>
-                {% capture tab_name %}{{ tab.url | split: '/' | last }}{% endcapture %}
     
                 <span>{{ site.data.locales[include.lang].tabs.[tab_name] | default: tab.title | upcase }}</span>
               </a>

@@ -6,15 +6,26 @@ layout:
   post: Пост
   category: Категория
   tag: Тег
+  game: Игра
+  release_note: Примечания к выпуску
 
 # The tabs of sidebar
 tabs:
   # format: <filename_without_extension>: <value>
   home: Блог
+  games: Игры
   categories: Категории
   tags: Теги
   archives: Архив
   about: О сайте
+
+games:
+  release_date: Дата выхода
+  buy_on: Купить в Steam
+  recent_articles: Последние статьи
+  release_notes: Примечания к выпускам
+  screenshots: Скриншоты и трейлеры
+  watch_youtube: Смотреть на YouTube
 
 # the text displayed in the search bar & search results
 search:

@@ -8,7 +8,22 @@
     <nav id="breadcrumb" aria-label="Breadcrumb">
       {% assign paths = page.url | split: '/' %}
 
-      {% if paths.size == 0 or page.layout == 'home' %}
+      {% if page.collection == 'games' %}
+        <span><a href="{{ '/' | append: lang | relative_url }}">{{ site.data.locales[include.lang].tabs.home | capitalize }}</a></span>
+        <span><a href="{{ '/' | append: lang | append: '/games/' | relative_url }}">{{ site.data.locales[include.lang].tabs.games }}</a></span>
+        <span>{{ page.title }}</span>
+
+      {% elsif page.collection == 'release_notes' %}
+        {% assign game_page = site.games | where: 'game', page.game | where: 'lang', lang | first %}
+        {% unless game_page %}
+          {% assign game_page = site.games | where: 'game', page.game | where: 'lang', 'en' | first %}
+        {% endunless %}
+        <span><a href="{{ '/' | append: lang | relative_url }}">{{ site.data.locales[include.lang].tabs.home | capitalize }}</a></span>
+        <span><a href="{{ '/' | append: lang | append: '/games/' | relative_url }}">{{ site.data.locales[include.lang].tabs.games }}</a></span>
+        <span><a href="{{ game_page.url | relative_url }}">{{ game_page.title | default: site.data.games[page.game].title }}</a></span>
+        <span>{{ page.title }}</span>
+
+      {% elsif paths.size == 0 or page.layout == 'home' %}
         <!-- index page -->
         <span>{{ site.data.locales[include.lang].tabs.home | capitalize }}</span>
 

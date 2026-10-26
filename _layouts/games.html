@@ -1,0 +1,12 @@
+---
+layout: page
+---
+
+{% include lang.html %}
+
+<div id="post-list" class="game-list">
+  {% assign localized_games = site.games | where: 'lang', lang | sort: 'release_date' | reverse %}
+  {% for game in localized_games %}
+    {% include game-card.html %}
+  {% endfor %}
+</div>

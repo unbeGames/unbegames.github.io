@@ -1,0 +1,148 @@
+---
+layout: default
+refactor: true
+---
+
+{% include lang.html %}
+{% assign game_data = site.data.games[page.game] %}
+
+<article class="game-page px-1">
+  <header class="game-title">
+    <h1 data-toc-skip>{{ page.title }}</h1>
+  </header>
+
+  <div class="game-hero row g-4">
+    <section class="col-md-8" aria-labelledby="game-media-title">
+      <h2 id="game-media-title" class="visually-hidden">{{ site.data.locales[lang].games.screenshots }}</h2>
+      <div class="game-media-stage">
+        {% for video in game_data.videos %}
+          <div id="game-video-{{ forloop.index }}" class="game-media{% if forloop.first %} is-active{% endif %}">
+            <iframe
+              src="https://www.youtube-nocookie.com/embed/{{ video.id }}"
+              title="{{ page.title }} — trailer {{ forloop.index }}"
+              loading="lazy"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </div>
+        {% endfor %}
+        <div id="game-screenshot" class="game-media">
+          <div class="game-screenshot-image" role="img" aria-label=""></div>
+        </div>
+      </div>
+
+      <div class="game-thumbnails" aria-label="{{ site.data.locales[lang].games.screenshots }}">
+        {% for video in game_data.videos %}
+          <button class="game-thumbnail{% if forloop.first %} is-active{% endif %}" type="button" data-game-media="game-video-{{ forloop.index }}" aria-label="Trailer {{ forloop.index }}" aria-pressed="{% if forloop.first %}true{% else %}false{% endif %}">
+            <span class="game-thumbnail-image" style="background-image: url('https://i.ytimg.com/vi/{{ video.id }}/mqdefault.jpg')"></span>
+            <i class="fas fa-play" aria-hidden="true"></i>
+          </button>
+        {% endfor %}
+        {% for screenshot in game_data.screenshots %}
+          {% assign thumbnail = screenshot | replace: '.1920x1080', '.116x65' %}
+          <button class="game-thumbnail" type="button" data-game-screenshot="{{ screenshot }}" data-game-alt="{{ page.title }} — screenshot {{ forloop.index }}" aria-label="Screenshot {{ forloop.index }}" aria-pressed="false">
+            <span class="game-thumbnail-image" style="background-image: url('{{ thumbnail }}')"></span>
+          </button>
+        {% endfor %}
+      </div>
+    </section>
+
+    <aside class="col-md-4 game-summary">
+      <img class="game-capsule" src="{{ game_data.capsule }}" alt="{{ page.title }}">
+      <p>{{ page.description }}</p>
+      <dl>
+        <dt>{{ site.data.locales[lang].games.release_date }}</dt>
+        <dd>{% include datetime.html date=page.release_date lang=lang %}</dd>
+      </dl>
+      <a class="btn btn-primary game-store-link" href="{{ game_data.store_url }}?l={{ lang | replace: 'en', 'english' | replace: 'ru', 'russian' }}" target="_blank" rel="noopener noreferrer">
+        <i class="fab fa-steam me-1"></i>{{ site.data.locales[lang].games.buy_on }}
+      </a>
+    </aside>
+  </div>
+
+  <div class="game-details row g-4 mt-2">
+    <div class="col-md-8">
+      <div class="content game-description">{{ content }}</div>
+
+      <section class="game-releases mt-5">
+        <h2>{{ site.data.locales[lang].games.release_notes }}</h2>
+        {% assign releases = site.release_notes | where: 'game', page.game | sort: 'release_date' | reverse %}
+        <ul class="game-link-list">
+          {% for release in releases %}
+            {% assign show_release = false %}
+            {% if release.lang == lang %}
+              {% assign show_release = true %}
+            {% elsif lang != 'en' and release.lang == 'en' %}
+              {% assign translated_releases = releases | where: 'version', release.version | where: 'lang', lang %}
+              {% if translated_releases.size == 0 %}
+                {% assign show_release = true %}
+              {% endif %}
+            {% endif %}
+            {% if show_release %}
+              <li>
+                <a href="{{ release.url | relative_url }}">{{ release.title }}</a>
+                <span>{% include datetime.html date=release.release_date lang=lang %}</span>
+              </li>
+            {% endif %}
+          {% endfor %}
+        </ul>
+      </section>
+    </div>
+
+    <aside class="col-md-4 game-articles">
+      <h2>{{ site.data.locales[lang].games.recent_articles }}</h2>
+      {% assign articles = site.posts | where: 'game', page.game | where: 'lang', lang %}
+      <ol class="game-link-list">
+        {% for post in articles limit: 10 %}
+          <li>
+            <a href="{{ post.url | relative_url }}">{{ post.title }}</a>
+            <span>{% include datetime.html date=post.date lang=lang %}</span>
+          </li>
+        {% endfor %}
+      </ol>
+    </aside>
+  </div>
+</article>
+
+<script>
+  (() => {
+    const media = document.querySelectorAll('.game-media');
+    const thumbnails = document.querySelectorAll('.game-thumbnail');
+    const screenshotPanel = document.getElementById('game-screenshot');
+    const screenshotImage = screenshotPanel.querySelector('.game-screenshot-image');
+    let imageRequest = 0;
+
+    const activate = (panel, button) => {
+      media.forEach((item) => item.classList.remove('is-active'));
+      thumbnails.forEach((item) => {
+        item.classList.remove('is-active');
+        item.setAttribute('aria-pressed', 'false');
+      });
+      panel.classList.add('is-active');
+      button.classList.add('is-active');
+      button.setAttribute('aria-pressed', 'true');
+    };
+
+    document.querySelectorAll('[data-game-media]').forEach((button) => {
+      button.addEventListener('click', () => {
+        imageRequest += 1;
+        activate(document.getElementById(button.dataset.gameMedia), button);
+      });
+    });
+
+    document.querySelectorAll('[data-game-screenshot]').forEach((button) => {
+      button.addEventListener('click', () => {
+        const request = ++imageRequest;
+        const image = new Image();
+        image.decoding = 'async';
+        image.onload = () => {
+          if (request !== imageRequest) return;
+          screenshotImage.style.backgroundImage = `url("${image.src}")`;
+          screenshotImage.setAttribute('aria-label', button.dataset.gameAlt);
+          activate(screenshotPanel, button);
+        };
+        image.src = button.dataset.gameScreenshot;
+      });
+    });
+  })();
+</script>

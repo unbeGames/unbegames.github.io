@@ -229,6 +229,8 @@ collections:
   tabs:
     output: true
     sort_by: order
+  games:
+    output: true
   release_notes:
     output: true
     permalink: /release-notes/:path/
@@ -276,6 +278,11 @@ defaults:
       layout: page
       permalink: /ru/:title/
       lang: ru
+  - scope:
+      path: ""
+      type: games
+    values:
+      layout: game
   - scope:
       path: ""
       type: release_notes
