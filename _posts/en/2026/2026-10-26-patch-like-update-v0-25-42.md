@@ -4,7 +4,7 @@ title: "Patch-like update v0.25.42"
 date: 2026-10-26 18:07:00 +0300
 categories: [Rocket Science, Update]
 tags: [rocket science]
-image: https://clan.cloudflare.steamstatic.com/images/34094219/93edde4f73fd7081f878cb0d3c97aef240cc783c.png
+image: https://clan.fastly.steamstatic.com/images/34094219/9acf8a192e68ade9a95539ff8a309f41811c2756.png
 game: rocket-science
 release_notes: rocket-science/v0.25.42
 ---
