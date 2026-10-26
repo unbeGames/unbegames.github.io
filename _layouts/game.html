@@ -14,7 +14,7 @@ refactor: true
 
   <div class="game-hero row g-4">
     <section class="col-md-8" aria-labelledby="game-media-title">
-      <h2 id="game-media-title" class="visually-hidden">{{ site.data.locales[lang].games.screenshots }}</h2>
+      <h2 id="game-media-title" class="game-visually-hidden">{{ site.data.locales[lang].games.screenshots }}</h2>
       <div class="game-media-stage">
         {% for video in game_data.videos %}
           <div id="game-video-{{ forloop.index }}" class="game-media{% if forloop.first %} is-active{% endif %}">
