@@ -6,7 +6,7 @@ date: 2020-02-20 20:06:00 +0300
 categories: [Rocket Science, Update]
 tags: [rocket science, release]
 image: https://clan.akamai.steamstatic.com/images/34094219/ce65d9a238340d07b2c6674b584f21177ed712ce_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 That's it, the game is out in Early Access!
 

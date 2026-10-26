@@ -6,7 +6,7 @@ categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 description: Orbital mechanics
 image: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/14ed4aa2a72c0aa043463164a92070616a2f46d9.png
-game: Rocket Science
+game: rocket-science
 ---
 Hello, guys.
 

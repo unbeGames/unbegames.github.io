@@ -6,7 +6,7 @@ date: 2024-05-17 21:12:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/1a3e8879e3966d6c23bda0d203946c252e093842_400x225.png
-game: Rocket Science
+game: rocket-science
 math: true
 ---
 Greetings, fellow rocket scientists!

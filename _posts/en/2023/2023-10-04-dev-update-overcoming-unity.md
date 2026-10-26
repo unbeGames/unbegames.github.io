@@ -6,7 +6,7 @@ date: 2023-10-04 20:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/d26a2d8c82c6e66180b3820e0479b03b92e2534b_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 After v0.19.6 release I took two weeks off to prepare for another big task – the transition to the new 2022.3 version of Unity. This particular one has to be one of the most challenging in the entirety of the game's existence. As I mentioned in previous dev updates, I’ve started building Rocket Science using a lot of newest experimental Unity packages such as HDRP, DOTS, Addressables, Burst, etc. They were under active development, which led to constant API and breaking changes, bugs and other early access stuff that you are familiar with. On the other hand they provided a set of tools that basically allowed me to make this game on Unity as performant as it is.
 

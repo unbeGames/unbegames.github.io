@@ -6,7 +6,7 @@ categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 description: Flight Planning
 image: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/99a46c1214939a7a65368e431ecb68363d446b6b.png
-game: Rocket Science
+game: rocket-science
 ---
 Hi there!
 

@@ -6,7 +6,7 @@ date: 2020-04-20 22:23:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/60d25a47e9934b6a9c668bf9e2b96e2ac255ec8c_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 
 Since flight UI improvements I did for v0.7.6 and rocket controls rework in v0.7.8, I was able to finally start working towards interplanetary flights. And the first thing I needed to do is to rewrite Math simulation.

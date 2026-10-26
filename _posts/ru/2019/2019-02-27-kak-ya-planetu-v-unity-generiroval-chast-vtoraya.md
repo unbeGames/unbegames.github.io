@@ -6,7 +6,7 @@ date: 2019-02-27 20:43:00 +0300
 categories: [Rocket Science, Статья]
 tags: [rocket science]  
 image: https://clan.akamai.steamstatic.com/images/32055644/27aed10d47ad9763e2a4be2eff9ac2091b1dd2a4.png
-game: Rocket Science
+game: rocket-science
 ---
 
 Это третья часть [истории](/ru/posts/2018/kak-ya-na-mars-raketu-otpravlyal/) о том, как разрабатывалась игра «Rocket Science», и продолжение [рассказа](/ru/posts/2019/kak-ya-planetu-v-unity-generiroval/) о генерации планеты средствами Юнити.

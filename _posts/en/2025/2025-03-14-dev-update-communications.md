@@ -6,7 +6,7 @@ date: 2025-03-14 19:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]  
 image: https://clan.cloudflare.steamstatic.com/images/32055644/d465ee71ff79b5a33f0feaabdc1bee2b4e2438c3.png
-game: Rocket Science
+game: rocket-science
 math: true
 ---
 Last February marked 5 years since the game started its journey in Early Access. Over the years I’ve released 16 big updates and dozens of patches. Since release this project was transformed from basically a technical demo to a real game that players can have fun with. While there is a long way to go and I am still working on this project alone, the end goal is finally within reach. I'll dedicate this dev update to my priorities, philosophy and plans in the near future.

@@ -6,7 +6,7 @@ date: 2026-03-20 18:30:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]  
 image: https://clan.cloudflare.steamstatic.com/images/32055644/ce00d5db277955b5e0fecff5974476df5974528f.png
-game: Rocket Science
+game: rocket-science
 math: true
 ---
 

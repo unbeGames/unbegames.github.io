@@ -6,7 +6,7 @@ categories: [Rocket Science, Дневник разработки]
 tags: [rocket science]
 description: Генерация планеты
 image: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/0243674f6c7ad289ebd6693251e8c62bac3a0932.png
-game: Rocket Science
+game: rocket-science
 ---
 Всем привет и добро пожаловать в февральский апдейт.
 

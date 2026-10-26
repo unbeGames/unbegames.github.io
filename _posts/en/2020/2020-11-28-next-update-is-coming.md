@@ -6,7 +6,7 @@ date: 2020-11-28 20:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/7039413086c6cb46c2ac170bd5cbae8aa5d022d7_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 Quick update here. Last two months I’ve been busy improving the game's internal code and structure. The main purpose of these changes is that I want the game to support thousands of flying spacecrafts and most Celestial bodies in the Solar system. It was not possible before, and that’s why.
 

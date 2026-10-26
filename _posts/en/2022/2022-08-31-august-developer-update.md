@@ -6,7 +6,7 @@ date: 2022-08-31 21:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/37d1c23272ced3b8f8404ae0d86bde6771e15a72_400x225.jpg
-game: Rocket Science
+game: rocket-science
 ---
 
 Hello, everyone!

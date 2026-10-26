@@ -6,7 +6,7 @@ date: 2021-05-28 20:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/228213a6d47e2adfbe6822d44bd63de74eae84eb_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 As time went on, I realised that three-months cycle for HDYLIEM development is the best. Three months is a good chunk of time to make meaningful changes to the game. And it is not long enough so players start thinking that the game was abandoned.
 

@@ -6,7 +6,7 @@ date: 2019-03-26 20:00:00 +0300
 categories: [Rocket Science, Статья]
 tags: [rocket science]  
 image: https://clan.akamai.steamstatic.com/images/32055644/52634c369b34ded8ceb8b0d2fa2c044fb04c17f7.png
-game: Rocket Science
+game: rocket-science
 ---
 Это четвертая статья из цикла историй о разработке игры «[Rocket Science](https://store.steampowered.com/app/890520/Rocket_Science/)», в которой я расскажу о том, как и каким образом я вращал планеты не только вокруг своей оси, но и вокруг Солнца.
 

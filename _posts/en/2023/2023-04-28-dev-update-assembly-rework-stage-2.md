@@ -6,7 +6,7 @@ date: 2023-04-28 20:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/ce55b456af5f4b31896352933f5a97025832c009_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 Today I want to tell you about the rocket assembly improvements that are coming in v0.19.0 “**Awakened Assembly**” update. This update is expected to be released in beta towards the end of May, but you can already get the glimpse of some changes in it today.
 

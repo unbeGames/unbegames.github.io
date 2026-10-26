@@ -6,7 +6,8 @@ date: 2022-03-10 23:35:00 +0300
 categories: [Rocket Science, Update]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/c061f93998bf97052aaec06a5e3a5e6a14e2b4de_400x225.png
-game: Rocket Science
+game: rocket-science
+release_notes: rocket-science/v0.15.0
 ---
 
 First of all I want to say some words about recent events. The war that Russian government started in February is a catastrophe, a disgrace and a crime against humanity. Hundreds of innocent people have already died in this war and I see no end of this horror. I had friends from Ukraine and my grandmother was also from there. I know what is happening there and share the pain and grief of Ukrainian people. I'm practically depressed because there's no way It can be stopped by ordinary people right now. But it should be stopped at any cost.
@@ -59,34 +60,3 @@ _I am planning to add more functions to each instrument panel soon_
 Update includes a bunch of smaller changes and fixes as always. You can find them below. I planned to add more contracts and at least two more new tutorials in this update, but lost two weeks because of recent events. And I don't even know if I will have access to the internet next week. So, here is the update and I hope you will like it. Please report any bugs or issues if you'll find them.
 
 Thank you and see you in the next one.
-
----
-
-## Release notes v0.15.0
-
-### Features:
-
-- added two new tabs into control center UI: "contracts" and "extended training";
-- added save stats;
-- reworked rocket stats UI during the flight;
-- reworked maneuver panel UI;
-- added target panel when rocket has target;
-- added 13 interactive contracts;
-- added one new extended training tutorial.
-
-### Changes:
-
-- game was renamed, now it called "Rocket Science";
-- vessels and probe cores will be always on top in the spacecraft list in the control center;
-- improved sprite resolution for some UI elements;
-- camera will get spacecraft and its parent body in focus when selecting spacecraft in the control center;
-- you can set spacecraft as target by clicking on it and holding ALT (previously it worked only when clicking on marker);
-- you can interrupt any tutorial at any moment;
-- added several more steps to the base tutorial, updated some steps to match the gane state.  
-
-### Fixes:
-
-- when you open the map when inspecting any building in the spaceport, camera transition is bugged, also building UI stays on the screen;
-- sometimes exception appeared when opening and closing ruins UI several times;
-- sometimes navball markers are misaligned;
-- sometimes huge drop in perfomance appears on rocket launch.

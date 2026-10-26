@@ -6,7 +6,7 @@ date: 2023-12-04 21:00:00 +0300
 categories: [Rocket Science, Update]
 tags: [rocket science, beta]
 image: https://clan.akamai.steamstatic.com/images/34094219/3cf37bc8b82aacf8413467c110d88589811d20bc_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 Today I am releasing part of the v0.20.0 "In Between" update into the beta branch. This will not include new rocket parts and several smaller features. They need a bit more work, so they will come in two and a half weeks with a full update release. So, let’s talk about what’s new is awaiting you in this update.
 

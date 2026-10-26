@@ -6,7 +6,7 @@ date: 2023-09-06 19:06:00 +0300
 categories: [Rocket Science, Статья]
 tags: [rocket science]  
 image: https://clan.akamai.steamstatic.com/images/32055644/ee3a0dbe8d2f7a1be89c8253d61d9a9a6e59e909.jpg
-game: Rocket Science
+game: rocket-science
 ---
 И о том, сколько времени заняла разработка, что должен уметь игровой движок, чтобы поддерживать подобную систему, а также причины, по которым, возможно, этого нет в Старфилде.
 

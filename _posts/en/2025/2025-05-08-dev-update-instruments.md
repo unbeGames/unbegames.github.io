@@ -6,7 +6,7 @@ date: 2025-05-08 18:30:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]  
 image: https://clan.cloudflare.steamstatic.com/images/32055644/50c4af0feae829494c697180276dc8168722bf9a.png
-game: Rocket Science
+game: rocket-science
 ---
 
 So, where was I at in the last dev update? I said that I started working on high gain antennas, right. And, oh boy, I have a story for you.

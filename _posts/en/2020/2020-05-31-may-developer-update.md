@@ -6,7 +6,7 @@ date: 2020-05-31 22:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/47e08322616e12197e35017471fd4e6de44a89ab_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 Developing a game is always a journey. You can never tell exactly how long the next task will take and how much research you should do before you actually start working on it. This is because of unique nature of games. No matter how many games you made before each time you will face some problems you couldn't even think of.
 

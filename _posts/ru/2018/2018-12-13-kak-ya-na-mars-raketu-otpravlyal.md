@@ -6,7 +6,7 @@ categories: [Rocket Science, Статья]
 tags: [rocket science]     # TAG names should always be lowercase
 description: История о том, как все начиналось
 image: https://clan.akamai.steamstatic.com/images/32055644/acbd09f7af0bdfd526c2c0575b55bf76cbeede34.png
-game: Rocket Science
+game: rocket-science
 ---
 Эту историю не напечатают в журнале Forbes. О ней не сделают сюжет в вечернем выпуске новостей на BBC и не вспомнят даже через месяц. Однако она будет опубликована в DTF[^footnote]. Как тебе такое, Илон Маск?
 

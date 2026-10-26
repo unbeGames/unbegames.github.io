@@ -6,7 +6,7 @@ date: 2021-02-20 20:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/b14eaa2e19bab7fe40b0477d4dc8ab6c957d34d0_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 Hi there, fellow rocket builders! First and foremost, today marks the 1-year anniversary of Rocket Science release on Steam!
 

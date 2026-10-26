@@ -6,7 +6,7 @@ date: 2022-11-01 22:26:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/f2fa14238c5b59c80d3ce664fe628bdf4d69af81_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 A quick update here about a new feature that is coming in the next v0.17 version of Rocket Science. So, this is actually happening. At the beginning of the development I thought planes are too complicated to make, and even placed researching this topic post v1.0 release into my roadmap. But the more I worked on the game and the more my skills improved, the more I began to realize that it was not only possible, but doable in the time frame of one update cycle.
 

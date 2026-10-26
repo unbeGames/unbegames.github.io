@@ -6,7 +6,7 @@ date: 2019-10-30 21:00:00 +0300
 categories: [Rocket Science, Дневник разработки]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images//34094219/221c092ca0d1ad48f568ff33a296bd360e4a6839.jpg
-game: Rocket Science
+game: rocket-science
 ---
 Привет, друзья!
 

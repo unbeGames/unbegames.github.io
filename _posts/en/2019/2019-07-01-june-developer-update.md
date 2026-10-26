@@ -6,7 +6,7 @@ date: 2019-07-01 00:47:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/5a42c6d642fd90392c996620017af677836a906e.png
-game: Rocket Science
+game: rocket-science
 ---
 Hello everyone!
 

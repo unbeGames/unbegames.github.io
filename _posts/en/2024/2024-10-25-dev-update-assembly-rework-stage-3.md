@@ -6,7 +6,7 @@ date: 2024-10-25 18:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]  
 image: https://clan.fastly.steamstatic.com/images/32055644/8aeaf27f20105b16148486858c7720f5ebb71022.png
-game: Rocket Science
+game: rocket-science
 ---
 This is the third and, I hope, the final part of assembly rework. If you’ve interested in reading the beginning of this story, you can check out the [first](/en/posts/2023/rocket-assembly-rework-stage-1/) and [second](/en/posts/2023/dev-update-assembly-rework-stage-2/) stage articles. Otherwise, let’s get started.
 

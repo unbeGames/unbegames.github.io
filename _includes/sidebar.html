@@ -66,16 +66,33 @@
 
       {% capture page_url %}{{ page.url | split: '/' | shift: shift | join: "/" }}{% endcapture %}
 
-      {% for locale in site.locales %}
-        {% unless page_url contains 'categories/' or site.data.skip_locale[locale] contains page_url %}
-          <span>
-            <a {% if locale == lang %} style="font-weight: bold;"{% endif %} href="{{site.baseurl}}/{{ locale }}/{{page_url}}">{{ locale }}</a>
-          </span>
-          {% if forloop.last == false %}
-          <span class="icon-border" style="background-color: transparent;"></span>
+      {% if page.collection == 'release_notes' %}
+        {% assign translations = site.release_notes | where: 'game', page.game | where: 'version', page.version %}
+        {% assign first_translation = true %}
+        {% for locale in site.locales %}
+          {% assign translation = translations | where: 'lang', locale | first %}
+          {% if translation %}
+            {% unless first_translation %}
+              <span class="icon-border" style="background-color: transparent;"></span>
+            {% endunless %}
+            <span>
+              <a {% if locale == lang %} style="font-weight: bold;"{% endif %} href="{{ translation.url | relative_url }}">{{ locale }}</a>
+            </span>
+            {% assign first_translation = false %}
           {% endif %}
-        {% endunless %}
-      {% endfor %}
+        {% endfor %}
+      {% else %}
+        {% for locale in site.locales %}
+          {% unless page_url contains 'categories/' or site.data.skip_locale[locale] contains page_url %}
+            <span>
+              <a {% if locale == lang %} style="font-weight: bold;"{% endif %} href="{{site.baseurl}}/{{ locale }}/{{page_url}}">{{ locale }}</a>
+            </span>
+            {% if forloop.last == false %}
+            <span class="icon-border" style="background-color: transparent;"></span>
+            {% endif %}
+          {% endunless %}
+        {% endfor %}
+      {% endif %}
     </div>
 
     <div class="sidebar-bottom d-flex flex-wrap  align-items-center w-100" style="justify-content: center;">

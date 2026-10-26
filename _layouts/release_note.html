@@ -1,0 +1,23 @@
+---
+layout: default
+refactor: true
+panel_includes:
+  - toc
+---
+
+{% include lang.html %}
+
+<article class="px-1">
+  <header>
+    <h1 data-toc-skip>{{ page.title }}</h1>
+    <div class="post-meta text-muted">
+      <span>{{ site.data.games[page.game].title | default: page.game }}</span>
+      <span>{% include datetime.html date=page.release_date tooltip=true lang=lang %}</span>
+    </div>
+  </header>
+
+  <div class="content mt-4">
+    {% assign release_content = content | replace: '<h3', '<h2' | replace: '</h3>', '</h2>' %}
+    {{ release_content }}
+  </div>
+</article>

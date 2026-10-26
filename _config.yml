@@ -229,6 +229,9 @@ collections:
   tabs:
     output: true
     sort_by: order
+  release_notes:
+    output: true
+    permalink: /release-notes/:path/
 
 defaults:
   - scope:
@@ -273,6 +276,12 @@ defaults:
       layout: page
       permalink: /ru/:title/
       lang: ru
+  - scope:
+      path: ""
+      type: release_notes
+    values:
+      layout: release_note
+      toc: true
   - scope:
       path: assets/js/dist
     values:

@@ -6,7 +6,7 @@ date: 2023-06-09 20:00:00 +0300
 categories: [Rocket Science, Update]
 tags: [rocket science, beta]
 image: https://clan.akamai.steamstatic.com/images/34094219/c95cf7573e3942b4d5f08f9aab11364e6b43729a_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 
 Greetings, rocket scientists!

@@ -6,7 +6,7 @@ date: 2019-11-30 21:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images//34094219/c9089c3a11a66b058b8c84cafccbd9ce97a5a01a.png
-game: Rocket Science
+game: rocket-science
 ---
 I wanted to publish a game trailer today instead of the usual update, but I was blocked by a critical bug in the Unity engine, which crashes the build. And because I use only ingame footage in the trailers, we’re gonna have to wait one or two weeks until it will be fixed. On the other hand, It is not that bad, because I will add more content into the game in that time and trailer will only get better because of that. Let's talk about work that was done and need to be done, so I can finally release the game. **Note**, that there is a link to a small survey at the end of this update. Please take a part in it, it will help me a lot.
 

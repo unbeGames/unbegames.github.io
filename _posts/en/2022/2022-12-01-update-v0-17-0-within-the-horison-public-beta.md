@@ -6,7 +6,7 @@ date: 2022-12-01 22:30:00 +0300
 categories: [Rocket Science, Update]
 tags: [rocket science, beta]
 image: https://clan.akamai.steamstatic.com/images/34094219/957206c74cd25566caf44ee55c0d6839477b99bc_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 This is the second update I decided to publish into the public beta branch first. It will stay there for about two weeks and will be released to the default branch once I will fix all critical issues found by players. I am planning to add several more parts that didn’t end up in beta and probably one or two tutorials related to a new content. You can find how to switch the game’s branch on Steam in the release notes section. Let's get started.
 

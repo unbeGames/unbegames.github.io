@@ -6,7 +6,7 @@ date: 2024-06-28 20:00:00 +0300
 categories: [Rocket Science, Development Blog]
 tags: [rocket science]
 image: https://clan.akamai.steamstatic.com/images/34094219/1f199311293a00eda7cf2b42ef926ee399a8b0ea.png
-game: Rocket Science
+game: rocket-science
 math: true
 ---
 When I started working on thermodynamics for “Rocket Science" I couldn’t even imagine how deep a rabbit hole. I am close to a finish line and now I understand why some recent space simulators choosed a very simplified model of thermal processes. Because everything appeared to be much more complicated compared to what I described in the [previous dev update](/en/posts/2024/dev-update-solving-thermodynamics/). Since I've spent so much time doing research and solving equations, I will publish most of my findings in this article despite the fact that each formula in the text reduces the number of readers by a factor of 2. First of all, it could be verified by people who have knowledge in this field (feel free to correct me in the comments below if I made a mistake). Secondly, I hope it will save some time for developers who want to implement a similar system in their game in the future. And finally, I'll be able to refresh my memories in a couple of years because by then I will have forgotten everything. Also, worth noting that all the equations in this article are just very simplified approximations made for the game, that need to be computationally fast.

@@ -6,7 +6,7 @@ date: 2019-07-31 22:00:00 +0300
 categories: [Rocket Science, Дневник разработки]
 tags: [rocket science]
 image: https://steamcdn-a.akamaihd.net/steamcommunity/public/images/clans/34094219/41a312866d5f323c55e7be0b773474b76ab8d389.png
-game: Rocket Science
+game: rocket-science
 ---
 Привет, друзья!
 

@@ -6,7 +6,7 @@ date: 2023-03-03 21:00:00 +0300
 categories: [Rocket Science, Update]
 tags: [rocket science, beta]
 image: https://clan.akamai.steamstatic.com/images/34094219/ab7be14c0f3c3842dabc506e5e79adafba3fe9e1_400x225.png
-game: Rocket Science
+game: rocket-science
 ---
 So, it finally happened. I started reworking the weakest part of the game – the rocket assembly. I mentioned several times earlier that this system was developed several months before the game release in EA, and its core hasn't changed much since that time, despite the addition of symmetry tools, parts rotation, force overlays and rocket subassemblies. It was badly written, had a lot of code duplication, hacks and workarounds. Because of that this system has been very hard to improve. Every change, even a small one, resulted in a bunch of bugs that were difficult to track down and debug. Also it never felt smooth. The slot-connector system has its own problems too but I will talk about them later.
 
