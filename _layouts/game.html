@@ -66,27 +66,48 @@ refactor: true
       <div class="content game-description">{{ content }}</div>
 
       <section class="game-releases mt-5">
-        <h2>{{ site.data.locales[lang].games.release_notes }}</h2>
+        <h2>{{ site.data.locales[lang].games.update_history }}</h2>
         {% assign releases = site.release_notes | where: 'game', page.game | sort: 'release_date' | reverse %}
-        <ul class="game-link-list">
-          {% for release in releases %}
-            {% assign show_release = false %}
-            {% if release.lang == lang %}
+        {% assign visible_releases = '' | split: '' %}
+        {% for release in releases %}
+          {% assign show_release = false %}
+          {% if release.lang == lang %}
+            {% assign show_release = true %}
+          {% elsif lang != 'en' and release.lang == 'en' %}
+            {% assign translated_releases = releases | where: 'version', release.version | where: 'lang', lang %}
+            {% if translated_releases.size == 0 %}
               {% assign show_release = true %}
-            {% elsif lang != 'en' and release.lang == 'en' %}
-              {% assign translated_releases = releases | where: 'version', release.version | where: 'lang', lang %}
-              {% if translated_releases.size == 0 %}
-                {% assign show_release = true %}
-              {% endif %}
             {% endif %}
-            {% if show_release %}
-              <li>
-                <a href="{{ release.url | relative_url }}">v{{ release.version }}{% if release.type == 'update' and release.name %} "{{ release.name }}"{% endif %}</a>
-                <span>{% include datetime.html date=release.release_date lang=lang %}</span>
-              </li>
+          {% endif %}
+          {% if show_release %}
+            {% assign visible_releases = visible_releases | push: release %}
+          {% endif %}
+        {% endfor %}
+
+        {% assign df_strftime_m = site.data.locales[lang].df.archives.strftime | default: '%m' %}
+        {% assign df_dayjs_m = site.data.locales[lang].df.archives.dayjs | default: 'MM' %}
+        <div id="archives" class="game-release-archive">
+          {% for release in visible_releases %}
+            {% assign cur_year = release.release_date | date: '%Y' %}
+            {% if cur_year != last_release_year %}
+              {% unless forloop.first %}</ul>{% endunless %}
+              <time class="year lead d-block">{{ cur_year }}</time>
+              {{ '<ul class="list-unstyled">' }}
+              {% assign last_release_year = cur_year %}
             {% endif %}
+
+            <li>
+              {% assign ts = release.release_date | date: '%s' %}
+              <span class="date day" data-ts="{{ ts }}" data-df="DD">{{ release.release_date | date: '%d' }}</span>
+              <span class="date month small text-muted ms-1" data-ts="{{ ts }}" data-df="{{ df_dayjs_m }}">
+                {{ release.release_date | date: df_strftime_m }}
+              </span>
+              <a href="{{ release.url | relative_url }}">v{{ release.version }}{% if release.type == 'update' and release.name %} "{{ release.name }}"{% endif %}</a>
+            </li>
+
+            {% if forloop.last %}</ul>{% endif %}
           {% endfor %}
-        </ul>
+        </div>
       </section>
     </div>
 
@@ -107,6 +128,11 @@ refactor: true
 
 <link rel="stylesheet" href="{{ site.data.origin[type].glightbox.css | relative_url }}">
 <script src="{{ site.data.origin[type].glightbox.js | relative_url }}"></script>
+{% assign locale = lang | split: '-' | first %}
+<script src="{{ site.data.origin[type].dayjs.js.common | relative_url }}"></script>
+<script src="{{ site.data.origin[type].dayjs.js.locale | replace: ':LOCALE', locale | relative_url }}"></script>
+<script src="{{ site.data.origin[type].dayjs.js.relativeTime | relative_url }}"></script>
+<script src="{{ site.data.origin[type].dayjs.js.localizedFormat | relative_url }}"></script>
 
 <script>
   (() => {
