@@ -1,6 +1,7 @@
 ---
 author: Arugin
 title: "Patch-like update v0.25.42"
+description: What I cannot simulate, I do not understand
 date: 2026-10-26 18:07:00 +0300
 categories: [Rocket Science, Update]
 tags: [rocket science]

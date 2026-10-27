@@ -1,6 +1,7 @@
 ---
 author: Arugin
-title: "Update v0.25.7 “Radian Veil”"
+title: "Update v0.25.7 “Radiant Veil”"
+description: An aspirant can afford to be promising. An emperor must keep those promises.
 date: 2026-06-19 20:51:00 +0300
 categories: [Rocket Science, Update]
 tags: [rocket science]
@@ -9,7 +10,7 @@ game: rocket-science
 release_notes: rocket-science/v0.25.7
 ---
 
-Welcome, fellow rocket scientists and pilots, to the update v0.25.7 “Radian Veil”!
+Welcome, fellow rocket scientists and pilots, to the update v0.25.7 “Radiant Veil”!
 
 At the beginning of April, I realized that the best way to continue developing the game was to fork the HDRP rendering pipeline and start making all the necessary changes directly to it. Since then, I’ve implemented several new features that I could only dream of before. This will lead to huge graphics improvements.
 

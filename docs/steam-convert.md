@@ -30,6 +30,23 @@ release_notes: rocket-science/vVERSION
 
 For Russian posts, use the translated title and `categories: [Rocket Science, Обновление]`.
 
+## Preview image
+
+Get the preview image from the article card on the game's Steam News Hub:
+
+1. Open `https://store.steampowered.com/news/app/APP_ID`.
+2. Find the card with the exact article title.
+3. Copy the card's background-image URL. Do not use the large event-page background from the article page.
+4. Remove the `_400x225` suffix from the filename to use the original image.
+5. Replace the CDN host with `clan.cloudflare.steamstatic.com`.
+
+Example:
+
+```text
+https://clan.akamai.steamstatic.com/images/34094219/HASH_400x225.png
+→ https://clan.cloudflare.steamstatic.com/images/34094219/HASH.png
+```
+
 ## BBCode to Markdown
 
 Convert Steam markup as follows:
@@ -58,6 +75,8 @@ The theme converts this adjacent emphasis into a centered, smaller, non-italic c
 
 Apply this format to every image caption, even when the Steam source did not italicize it.
 
+Don't forget to add post address to `skip_locale.yml` if it has only english locale.
+
 ## Release notes
 
 Remove the `vVERSION release notes` section from both article bodies. Create the English release-note document separately:
@@ -74,12 +93,13 @@ type: update
 name: 'Release name'
 release_date: YYYY-MM-DD
 lang: en
-title: 'vVERSION Release Notes'
+title: 'vVERSION "Release name" Release Notes'
 permalink: /en/games/rocket-science/releases/vVERSION/
 ---
 ```
 
 Convert each `🔸` release-note entry to a Markdown list item (`-`). Do not create a Russian release-note file when its contents are an exact English copy. The release-note plugin automatically falls back to English for the Russian post.
+Release name in the Release Notes should be added in case of update. In case of patch notes it should be omited because patches usually don't have names.
 
 ## Verification
 
