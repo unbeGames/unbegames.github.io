@@ -2,7 +2,7 @@
 game: rocket-science
 version: "0.25.7"
 type: update
-name: 'Radian Veil'
+name: 'Radiant Veil'
 release_date: 2026-06-19
 lang: en
 title: 'v0.25.7 Release Notes'
