@@ -179,6 +179,14 @@ body:has(.game-page) {
   margin-top: 0;
 }
 
+.game-description-media {
+  display: block;
+  width: 100%;
+  height: auto;
+  margin: 1.5rem auto;
+  border-radius: 0.3rem;
+}
+
 .game-link-list {
   margin: 0;
   padding: 0;

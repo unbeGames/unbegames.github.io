@@ -1,3 +1,18 @@
+spreadstorm:
+  title: Spreadstorm
+  app_id: 742380
+  capsule: https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/742380/header.jpg?t=1726297788
+  store_url: https://store.steampowered.com/app/742380/Spreadstorm/
+  videos:
+    - id: pGp2wWEBjdo
+  screenshots:
+    - https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/742380/ss_21e20faea34b281a491e6dbfb9705bbe73be6298.1920x1080.jpg?t=1726297788
+    - https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/742380/ss_22882efa525171ce37e11bf85fe2c1242540536c.1920x1080.jpg?t=1726297788
+    - https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/742380/ss_fbfdc6eecad0e050c87f5cefdcd8f5b3e30b539d.1920x1080.jpg?t=1726297788
+    - https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/742380/ss_b06ad3aeaad6daf4f693ebc07ef6b67fe358cfcc.1920x1080.jpg?t=1726297788
+    - https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/742380/ss_7bd344ed47575bda5c6c6333425aff23c28004ef.1920x1080.jpg?t=1726297788
+    - https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/742380/ss_1044b7d93cc3f4899d3fb373993831a68be15d07.1920x1080.jpg?t=1726297788
+
 rocket-science:
   title: Rocket Science
   app_id: 890520

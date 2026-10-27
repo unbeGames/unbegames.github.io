@@ -31,6 +31,11 @@ Conduct R&D on super-heavy rockets capable of delivering equipment, cargo and pe
 
 Take part in the first stage of the space program right now!
 
+<video class="game-description-media" autoplay muted loop playsinline poster="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/890520/extras/5522fcdbb252f7a6f3eaccada5daee03.poster.avif?t=1781950376">
+  <source src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/890520/extras/5522fcdbb252f7a6f3eaccada5daee03.webm?t=1781950376" type="video/webm">
+  <source src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/890520/extras/5522fcdbb252f7a6f3eaccada5daee03.mp4?t=1781950376" type="video/mp4">
+</video>
+
 ## Design
 
 Assemble spacecraft and rockets from over 30 available parts with varying physical parameters. The parts can be joined together through a system of connectors and slots. This significantly reduces the number of non-viable configurations without limiting the flights of your imagination.

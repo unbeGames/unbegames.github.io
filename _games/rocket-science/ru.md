@@ -31,6 +31,11 @@ permalink: /ru/games/rocket-science/
 
 Примите участие в первом этапе космической программы уже сейчас!
 
+<video class="game-description-media" autoplay muted loop playsinline poster="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/890520/extras/5522fcdbb252f7a6f3eaccada5daee03.poster.avif?t=1781950376">
+  <source src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/890520/extras/5522fcdbb252f7a6f3eaccada5daee03.webm?t=1781950376" type="video/webm">
+  <source src="https://shared.akamai.steamstatic.com/store_item_assets/steam/apps/890520/extras/5522fcdbb252f7a6f3eaccada5daee03.mp4?t=1781950376" type="video/mp4">
+</video>
+
 ## Проектируйте
 
 Собирайте космические аппараты и ракеты из более чем 30 доступных деталей с различными физическими параметрами. Соединения деталей основаны на системе коннекторов и слотов, которая значительно уменьшает количество нерабочих конфигураций, не ограничивая при этом полет вашего воображения.
